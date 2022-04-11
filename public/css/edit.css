@@ -1,0 +1,422 @@
+/* ページ内リンクの挙動をゆっくりにする */
+
+html { scroll-behavior: smooth;}
+
+/* header */
+
+.header {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(#315369, #315166);
+    border-bottom: solid 3px #FCE4E7;
+}
+
+.item {
+    height: 105px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+.menu {
+    font-size: 16px;
+    color: #FCE4E7;
+    text-decoration: none;
+    display: block;
+    margin: 0 28px 0 54px;
+    transition: all 0.3s;
+}
+
+.menu2 {
+    font-size: 16px;
+    color: #FCE4E7;
+    text-decoration: none;
+    display: block;
+    margin: 0 29px;
+    transition: all 0.3s;
+}
+
+.menu3 {
+    font-size: 16px;
+    color: #FCE4E7;
+    text-decoration: none;
+    display: block;
+    margin: 0 30px;
+    transition: all 0.3s;
+}
+
+.menu4 {
+    font-size: 16px;
+    color: #FCE4E7;
+    text-decoration: none;
+    display: block;
+    margin: 0 30px;
+    transition: all 0.3s;
+}
+
+.item a:hover {
+    opacity: 0.5;
+}
+
+.container {
+    width: 1510px;
+}
+
+/* main */
+
+.main {
+    width: auto;
+    height: 1596px;
+    background: linear-gradient(#315166, #162735);
+    z-index: 1;
+    padding: 0 15.5%;
+}
+
+/* main-top */
+
+.main-top {
+    text-align: center;
+    padding-top: 70px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.main-top h2 {
+    margin-bottom: 10px;
+}
+
+.lemon {
+    height: 60px;
+}
+
+.main-top h2 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    /* padding-top: 89px; */
+}
+
+/* form */
+
+.input-form-outside {
+    /* width: 971px; */
+    height: 1130px;
+    background: linear-gradient(#359FAD, #1B5057);
+    z-index: 10;
+    padding-top: 42px;
+}
+
+.input-form {
+    width: 970px;
+    height: 1040px;
+    background-color: #D4E5E8;
+    /* margin: 20px; */
+    text-align: center;
+    z-index: 20;
+    margin: 0 auto;
+}
+
+/* form-top */
+
+.form-top {
+    width: 100%;
+    height: 510px;
+    display: flex;
+    z-index: 30;
+}
+
+.top-left {
+    width: 41%;
+    height: 510px;
+}
+
+.top-left-container {
+
+    margin: 10px 30px 0 104px;
+}
+
+#preview {
+    width: 261px;
+    height: 377px;
+    margin-top: 57px;
+}
+
+#preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+/* labelをボタンらしく */
+.upload-label {
+    display: inline-block;
+    cursor: pointer; /* カーソルを指に */
+    margin: 1em 0; /* まわりの余白 */
+    padding: .7em 1em; /* 文字まわりの余白 */
+    line-height: 1.4; /* 行間 */
+    background: #3e8bff; /* 背景色 */
+    color: #FFF; /* 文字色 */
+    font-size: 0.95em; /* フォントサイズ */
+    border-radius: 2.5em; /* 角の丸み */
+    transition: 0.2s; /* ホバーをなめらかに */
+  }
+  /* ホバー時 */
+  .upload-label:hover {
+    box-shadow: 0 8px 10px -2px rgba(0, 0, 0, 0.2); /* 影を表示 */
+  }
+  /* inputは隠す */
+  .upload-label input {
+    display: none;
+  }
+
+
+
+.top-right {
+    width: 59%;
+}
+
+.top-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 470px;
+}
+
+.top-right input {
+    width: 353px;
+    font-size: 19px;
+}
+
+.date input {
+    height: 37px;
+    background-color: #D4E5E8;
+    border: solid 2px #BAA68B;
+    text-align: left;
+}
+
+.name input, .base input, .taste input {
+    height: 33px;
+    background-color: #D4E5E8;
+    border: solid 2px #BAA68B;
+}
+
+.featuru textarea {
+    width: 353px;
+    height: 112px;
+    font-size: 19px;
+    background-color: #D4E5E8;
+    border: solid 2px #BAA68B;
+}
+
+.date, .name, .base, .taste, .featuru {
+    font-size: 23px;
+    color: #00577C;
+    text-align: left;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-right label {
+    padding-top: 10px;
+}
+
+.date {
+    margin-top: 57px;
+}
+
+.name {
+    margin-top: 40px;
+}
+
+.base {
+    margin-top: 39px;
+}
+
+.taste {
+    margin-top: 41px;
+}
+
+.featuru {
+    margin-top: 40px;
+}
+
+/* form-middle */
+
+.form-middle {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.ingredient-top, h4 {
+    font-size: 22px;
+    color: #00577C;
+    margin: 15px 111px 15px 0;
+}
+
+.quantity-top h4 {
+    font-size: 22px;
+    color: #00577C;
+    margin: 15px 328px 15px 0;
+}
+
+.left-increase {
+    display: flex;
+}
+
+.increase {
+    width: 107px;
+}
+
+.puls {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    color: white;
+    background-color: #BEBEBE;
+    border-radius: 30%;
+    text-shadow: 3px 3px 3px #7B7078;
+    margin: 117px 0 0 44px;
+}
+
+.ingredient-bottom input, .quantity-bottom input {
+    width: 315px;
+    height: 33px;
+    font-size: 19px;
+    margin-bottom: 17px;
+    background-color: #D4E5E8;
+    border: solid 2px #BAA68B;
+}
+
+.ingredient-bottom, .quantity-bottom {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredient-bottom input {
+    margin: 0 58px 17px 0;
+}
+
+.quantity-bottom {
+    margin: 0 107px 0 56px;
+}
+
+.form-bottom h4 {
+    text-align: left;
+    padding-left: 109px;
+}
+
+.form-bottom textarea {
+    width: 755px;
+    height: 177px;
+    font-size: 19px;
+    background-color: #D4E5E8;
+    border: solid 2px #BAA68B;
+    line-height: 1.5em;
+}
+
+/* 登録ボタン */
+
+
+
+.register-derete {
+    display: flex;
+    justify-content: center;
+}
+
+.register-btn {
+    width: 158px;
+    height: 40px;
+    background-color: #1A4D6F;
+    font-size: 19px;
+    color: white;
+    margin: 24px 10px 0 10px;
+    transition: all 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #1a4d6fcc;
+}
+
+/* 削除ボタン */
+
+.derete-btn {
+    width: 158px;
+    height: 40px;
+    background-color: #BC4B4B;
+    font-size: 19px;
+    color: white;
+    margin: 24px 10px 0 10px;
+    transition: all 0.3s;
+}
+
+.derete-btn:hover {
+    background-color: #bc4b4bd8;
+}
+
+/* 思い出一覧 */
+
+.memory {
+    width: 100%;
+
+}
+
+.memory-list {
+    display: block;
+    text-align: center;
+    margin-top: 42px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.memory-list:hover {
+  opacity: 0.5;
+}
+
+
+/* ページトップボタン */
+
+.page-top-btn a {
+    display: block;
+    width: 35px;
+    margin: 86px auto;
+    transition: all 0.3s;
+}
+
+.page-top-btn a:hover {
+    opacity: 0.5;
+}
+
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(#00577c 0%, #004562 0%, #003f59 0%, #002c3e 100%);;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h3 {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 3px black;
+    font-family: せのびゴシック;
+}
+
+.footer p {
+    color: white;
+    font-size: 14px;
+}

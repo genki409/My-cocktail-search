@@ -1,0 +1,449 @@
+@charset "utf-8";
+
+/* レイアウト */
+@font-face {
+    font-family: "03SmartFontUI";
+    src: url("../fonts/03SmartFontUI.ttf");
+}
+@font-face {
+    font-family: "せのびレギュラー";
+    src: url("../fonts/Senobi-Gothic-Regular\ 20.58.13.ttf");
+}
+@font-face {
+    font-family: "せのびゴシック";
+    src: url("../fonts/Senobi-Gothic-Bold.ttf");
+}
+.container-bg {
+    position: relative;
+    background: linear-gradient(#355469 0%, #1b2a35 100%);
+}
+.container-bg::after {
+    content: "";
+    position: absolute;
+    /* top: 245px; */
+    width: 400px;
+    top: 150px;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+}
+@media (min-width: 1550px) {
+    .container-bg::after {
+        top: 170px;
+        width: 480px;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1360px;
+        padding: 0;
+    }
+}
+@media (min-width: 1550px) {
+    .container {
+        max-width: 1525px;
+    }
+}
+
+/* ------------ header ------------ */
+.header {
+    width: 100%;
+    height: 100px;
+}
+
+/* ------------ main ------------ */
+/* --------------------------------
+          main-top
+-------------------------------- */
+.main-top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 84px;
+}
+@media (min-width: 1550px) {
+    .main-top {
+        padding-top: 101px;
+    }
+}
+.main-top::after {
+    /* content: url(../img/record-list_cocktail.png); */
+    position: absolute;
+    /* top: 97px;
+    right: 55px; */
+}
+@media (min-width: 1550px) {
+    .main-top::after {
+        content: url(../img/record-list_cocktail-1600.png);
+        top: 190px;
+        right: 72px;
+    }
+}
+.main-top-left h1 {
+    padding-top: 11px;
+    padding-left: 12px;
+    font-size: 30px;
+    color: #fff;
+}
+@media (min-width: 1550px) {
+    .main-top-left h1 {
+        font-size: 33px;
+        padding-left: 21px;
+    }
+}
+.main-top-right .navbar {
+    background-color: transparent !important;
+}
+.main-top-right .navbar .container-fluid {
+    padding-right: var(--bs-gutter-x, 1rem);
+}
+.navbar .navbar-nav .nav-item:nth-child(2) {
+    margin-left: 18px;
+}
+.navbar .navbar-nav .nav-link {
+    padding: 0;
+    transition: all 0.9s;
+}
+.navbar .navbar-nav .nav-link:hover {
+    opacity: 0.5;
+}
+.navbar .navbar-nav .nav-link img {
+    border-radius: 12px;
+}
+.memory-count {
+    position: absolute;
+    top: -23px;
+    right: 17px;
+    font-family: "ヒラギノ丸ゴ ProN";
+    font-size: 17px;
+    color: #fff;
+}
+@media (min-width: 1550px) {
+    .memory-count {
+        top: -26px;
+        right: 24px;
+        font-size: 18px;
+    }
+}
+.memory-count p {
+    margin: 0;
+}
+.search-box {
+    margin-left: 15px;
+}
+.search-box .form-control {
+    width: 267px;
+    border: 0;
+    border-radius: 10px;
+    font-family: "ヒラギノ丸ゴ ProN", "FontAwesome";
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.68);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4) inset;
+}
+@media (min-width: 1550px) {
+    .search-box .form-control {
+        width: 305px;
+        font-size: 21px;
+    }
+}
+.search-box .form-control::placeholder {
+    color: #7e6f5a;
+}
+
+/* --------------------------------
+          .pagination-top
+-------------------------------- */
+.pagination-top {
+    margin-top: 147px;
+}
+@media (min-width: 1550px) {
+    .pagination-top {
+        margin-top: 162px;
+    }
+}
+.pagination {
+    display: flex;
+    white-space: nowrap;
+}
+.pagination-inner {
+    width: 520px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+@media (min-width: 1550px) {
+    .pagination-inner {
+        width: 571px;
+    }
+}
+.pagination-page {
+    font-size: 14px;
+    line-height: 1;
+}
+.pagination-page strong,
+.pagination-page a {
+    position: relative;
+    display: inline-block;
+    min-width: 43px;
+    min-height: 43px;
+    margin-right: 18px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+@media (min-width: 1550px) {
+    .pagination-page strong,
+    .pagination-page a {
+        min-width: 47px;
+        min-height: 47px;
+        margin-right: 22px;
+    }
+}
+.pagination-page strong:before,
+.pagination-page a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-sizing: border-box;
+}
+.pagination-page strong {
+    font-weight: 400;
+    opacity: 0.5;
+}
+.pagination-page a {
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.pagination-page a:hover {
+    opacity: 0.5;
+}
+.pagination-page strong span,
+.pagination-page a span {
+    display: block;
+    margin-top: 14px;
+    font-family: "せのびレギュラー";
+    font-size: 17px;
+    color: #355469;
+}
+@media (min-width: 1550px) {
+    .pagination-page strong span,
+    .pagination-page a span {
+        margin-top: 15px;
+        font-size: 19px;
+    }
+}
+.pagination-omission {
+    margin-left: 5px;
+    color: #fff;
+}
+@media (min-width: 1550px) {
+    .pagination-omission {
+        margin-left: 2px;
+        font-size: 18px;
+    }
+}
+.pagination-next,
+.pagination-prev,
+.pagination-last {
+    font-size: 14px;
+    line-height: 1;
+}
+.pagination-next a,
+.pagination-prev a,
+.pagination-last a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 9px;
+    font-family: "せのびレギュラー";
+    font-size: 17px;
+    color: #355469;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+.pagination-next a:hover,
+.pagination-prev a:hover,
+.pagination-last a:hover {
+    opacity: 0.5;
+}
+.pagination-next a {
+    width: 55px;
+    height: 45px;
+    padding-left: 13px;
+}
+@media (min-width: 1550px) {
+    .pagination-next a {
+        width: 60px;
+        height: 48px;
+    }
+}
+.pagination-next a:after,
+.pagination-next a:before,
+.pagination-prev a:after,
+.pagination-prev a:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.pagination-next a span {
+    margin-right: 2px;
+}
+.pagination-last {
+    margin-right: 5px;
+    margin-left: -2px;
+}
+@media (min-width: 1550px) {
+    .pagination-last {
+        margin-right: 0;
+        margin-right: 0;
+    }
+}
+.pagination-last a {
+    width: 70px;
+    height: 45px;
+}
+@media (min-width: 1550px) {
+    .pagination-last a {
+        width: 77px;
+        height: 48px;
+    }
+}
+
+/* --------------------------------
+            .cards
+-------------------------------- */
+.cards {
+    margin-top: 41px;
+}
+.row {
+    max-width: 1100px;
+    --bs-gutter-x: 1.5rem !important;
+    --bs-gutter-y: 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto !important;
+}
+@media (min-width: 1550px) {
+    .row {
+        max-width: 1220px;
+    }
+}
+.row > * {
+    padding-right: calc(var(--bs-gutter-x) * 0.9);
+    padding-left: calc(var(--bs-gutter-x) * 0.6);
+}
+.row a {
+    color: #fff;
+    text-decoration: none;
+}
+.row a:nth-child(n + 5) {
+    margin-top: 57px;
+}
+.card {
+    position: relative;
+    height: 290px;
+    border: none !important;
+    border-radius: 49px !important;
+}
+@media (min-width: 1550px) {
+    .card {
+        height: 325px;
+    }
+}
+.card:hover {
+    transform: scale(1.02);
+    transition-duration: 0.5s;
+}
+.card-img {
+    height: 100%;
+    background-size: cover;
+    border-radius: 38px !important;
+}
+@media (max-width: 760px) {
+    .card-img {
+        height: auto;
+        max-height: 700px;
+    }
+}
+.card-body {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    padding: 0 !important;
+    text-align: center;
+    background: linear-gradient(#baa68b 0%, #5d5346 100%);
+    border-radius: 0px 0px 38px 38px !important;
+    color: #fff;
+}
+.card-title {
+    margin-top: 12px;
+    margin-bottom: 9px;
+    font-family: "03SmartFontUI";
+    font-size: 19px;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.16);
+}
+@media (min-width: 1550px) {
+    .card-title {
+        margin-top: 10px;
+        font-size: 22px;
+    }
+}
+.card-date {
+    margin-bottom: 0;
+    font-family: "Noto Serif Myanmar";
+    font-size: 14px;
+}
+@media (min-width: 1550px) {
+    .card-date {
+        font-size: 15px;
+    }
+}
+
+/* --------------------------------
+        .pagination-bottom
+-------------------------------- */
+.pagination-bottom {
+    margin-top: 43px;
+}
+@media (min-width: 1550px) {
+    .pagination-bottom {
+        margin-top: 53px;
+    }
+}
+
+/* --------------------------------
+          .page-top-btn
+-------------------------------- */
+.page-top-btn {
+    padding-top: 100px;
+    padding-bottom: 55px;
+}
+@media (min-width: 1550px) {
+    .page-top-btn {
+        padding-top: 120px;
+        padding-bottom: 75px;
+    }
+}
+.page-top-btn a {
+    display: block;
+    color: #fce4e7;
+    text-align: center;
+    margin-top: 2px;
+    border: 3px solid #fce4e7;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+}
+.page-top-btn .fas {
+    font-size: 29px;
+}
