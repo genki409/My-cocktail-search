@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
     return view('tops.top');
 });
@@ -45,6 +49,3 @@ Route::get('/records/{id}/edit', 'MemoController@edit')->name('records.edit')->m
 Route::put('/records/{id}', 'MemoController@update')->name('records.update');
 
 Route::delete('/records/{id}', 'MemoController@destroy')->name('records.destroy');
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
