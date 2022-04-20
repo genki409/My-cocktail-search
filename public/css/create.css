@@ -67,7 +67,7 @@ html { scroll-behavior: smooth;}
 
 .main {
     width: auto;
-    height: 1596px;
+    height: 100%;
     background: linear-gradient(#315166, #162735);
     z-index: 1;
     padding: 0 15.5%;
@@ -248,77 +248,31 @@ html { scroll-behavior: smooth;}
 
 /* form-middle */
 
-.form-middle {
+.form-middle, .form-bottom {
     width: 100%;
     height: auto;
-    display: flex;
-}
-
-.ingredient-top, h4 {
-    font-size: 22px;
-    color: #00577C;
-    margin: 15px 111px 15px 0;
-}
-
-.quantity-top h4 {
-    font-size: 22px;
-    color: #00577C;
-    margin: 15px 328px 15px 0;
-}
-
-.left-increase {
-    display: flex;
-}
-
-.increase {
-    width: 107px;
-}
-
-.puls {
-    width: 32px;
-    height: 32px;
-    font-size: 20px;
-    color: white;
-    background-color: #BEBEBE;
-    border-radius: 30%;
-    text-shadow: 3px 3px 3px #7B7078;
-    margin: 117px 0 0 44px;
-}
-
-.ingredient-bottom input, .quantity-bottom input {
-    width: 315px;
-    height: 33px;
-    font-size: 19px;
-    margin-bottom: 17px;
-    background-color: #F0EBE5;
-    border: solid 2px #BAA68B;
-}
-
-.ingredient-bottom, .quantity-bottom {
-    width: 50%;
+    padding: 0 55px;
     display: flex;
     flex-direction: column;
 }
 
-.ingredient-bottom input {
-    margin: 0 58px 17px 0;
-}
-
-.quantity-bottom {
-    margin: 0 107px 0 56px;
-}
-
-.form-bottom h4 {
+.form-middle h4, .form-bottom h4 {
+    font-size: 22px;
+    color: #00577C;
     text-align: left;
-    padding-left: 109px;
+    margin: 15px 0 0 55px;
 }
 
-.form-bottom textarea {
+.form-bottom textarea, .form-middle textarea {
     width: 755px;
-    height: 177px;
+    height: 140px;
     font-size: 19px;
     background-color: #F0EBE5;
     border: solid 2px #BAA68B;
+}
+
+.comment, .ingredient-text {
+    padding: 0 50px;
 }
 
 /* 登録ボタン */
