@@ -212,6 +212,7 @@ html { scroll-behavior: smooth;}
 
 .top-right {
     width: 59%;
+    margin-right: 105px;
 }
 
 .top-right-container {
@@ -219,6 +220,7 @@ html { scroll-behavior: smooth;}
     flex-direction: column;
     justify-content: space-between;
     width: 470px;
+    /* margin-right: 20px; */
 }
 
 .top-right input {
