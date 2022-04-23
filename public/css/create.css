@@ -164,20 +164,35 @@ html { scroll-behavior: smooth;}
     margin: 0 auto;
 }
 
+@media screen and (max-width:1100px){
+    .form-top{
+
+    }
+}
+
 .top-left {
     width: 41%;
     height: 510px;
-    margin: 10px 30px 0 104px;
+    /* margin: 10px 30px 0 104px; */
 }
 
 .top-left-container {
     /* margin: 10px 30px 0 104px; */
+    width: auto;
 }
 
 #preview {
     width: 261px;
     height: 377px;
+    margin: 0 auto;
     margin-top: 57px;
+}
+
+@media screen and (max-width:1100px){
+    #preview {
+        width: 220px;
+        height: 310px;
+    }
 }
 
 #preview img {
@@ -215,6 +230,13 @@ html { scroll-behavior: smooth;}
     margin-right: 105px;
 }
 
+@media screen and (max-width:1100px){
+    .top-right {
+        /* width: 420px; */
+        margin-right: 40px;
+    }
+}
+
 .top-right-container {
     display: flex;
     flex-direction: column;
@@ -240,6 +262,13 @@ html { scroll-behavior: smooth;}
     background-color: #F0EBE5;
     border: solid 2px #BAA68B;
 }
+
+@media screen and (max-width:1100px){
+    .date input, .name input, .base input, .taste input  {
+        width: 290px;
+        height: 33px;
+    }
+} 
 
 .featuru textarea {
     width: 353px;
@@ -305,6 +334,13 @@ html { scroll-behavior: smooth;}
     font-size: 19px;
     background-color: #F0EBE5;
     border: solid 2px #BAA68B;
+}
+
+@media screen and (max-width:1100px){
+    .form-bottom textarea, .form-middle textarea {
+        width: 610px;
+        font-size: 16px;
+    }
 }
 
 .comment, .ingredient-text {
