@@ -70,12 +70,17 @@ html { scroll-behavior: smooth;}
     width: 1510px;
 } */
 
+.body {
+    background: linear-gradient(#315166, #162735);
+    z-index: 1;
+}
+
 /* main */
 
 .main {
     width: auto;
-    height: 100%;
-    background: linear-gradient(#315166, #162735);
+    height: auto;
+    /* background: linear-gradient(#315166, #162735); */
     z-index: 1;
     /* padding: 0 15.5%; */
     margin: 0 auto;
@@ -92,13 +97,20 @@ html { scroll-behavior: smooth;}
     margin-bottom: 50px;
 }
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:520px){
 
 }
 @media screen and (max-width:960px){
     .main-top {
         padding-top: 30px;
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:520px){
+    .main-top {
+        padding-top: 25px;
+        margin-bottom: 25px;
     }
 }
 
@@ -115,6 +127,12 @@ html { scroll-behavior: smooth;}
     }
 }
 
+@media screen and (max-width:520px){
+    .main-top h2 {
+        font-size: 17px;
+    }
+}
+
 .glass {
     height: 80px;
 }
@@ -125,7 +143,11 @@ html { scroll-behavior: smooth;}
     }
 }
 
-
+@media screen and (max-width:960px){
+    .glass {
+        height: 40px;
+    }
+}
 
 /* form */
 
@@ -141,6 +163,13 @@ html { scroll-behavior: smooth;}
     .input-form-outside {
         width: auto;
         margin: 0 30px;
+    }
+}
+@media screen and (max-width:960px){
+    .input-form-outside {
+        padding: 20px 0;
+        height: 100%;
+
     }
 }
 
@@ -159,6 +188,13 @@ html { scroll-behavior: smooth;}
         margin: 0 40px;
     }
 }
+@media screen and (max-width:960px){
+    .input-form {
+        width: auto;
+        margin: 0 20px;
+        height: 100%;
+    }
+}
 
 
 /* form-top */
@@ -171,9 +207,11 @@ html { scroll-behavior: smooth;}
     margin: 0 auto;
 }
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:960px){
     .form-top{
-
+        flex-direction: column;
+        height: auto;
+        width: auto;
     }
 }
 
@@ -186,6 +224,12 @@ html { scroll-behavior: smooth;}
 @media screen and (max-width:1100px){
     .top-left{
         width: 50%;
+    }
+}
+@media screen and (max-width:960px){
+    .top-left{
+        width: auto;
+        height: 420px;
     }
 }
 
@@ -256,6 +300,12 @@ html { scroll-behavior: smooth;}
         margin-right: 85px;
     }
 }
+@media screen and (max-width:960px){
+    .top-right {
+        width: auto;
+        margin: 0 50px;
+    }
+}
 
 .top-right-container {
     display: flex;
@@ -306,6 +356,12 @@ html { scroll-behavior: smooth;}
         font-size: 16px;
     }
 } 
+@media screen and (max-width:960px){
+    .date input, .name input, .base input, .taste input  {
+        width: 220px;
+        font-size: 15px;
+    }
+} 
 
 .featuru textarea {
     width: 353px;
@@ -319,6 +375,12 @@ html { scroll-behavior: smooth;}
     .featuru textarea {
         width: 250px;
         font-size: 16px;
+    }
+}
+@media screen and (max-width:960px){
+    .featuru textarea {
+        width: 220px;
+        font-size: 15px;
     }
 }
 
@@ -365,9 +427,11 @@ html { scroll-behavior: smooth;}
     flex-direction: column;
 }
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:960px){
     .form-middle, .form-bottom {
-
+        flex-direction: row;
+        margin: 30px 50px 0 50px;
+        justify-content: space-between;
     }
 }
 
@@ -383,6 +447,11 @@ html { scroll-behavior: smooth;}
         font-size: 20px;
     }
 }
+@media screen and (max-width:960px){
+    .form-middle h4, .form-bottom h4 {
+        margin-left: 19px;
+    }
+}
 
 .form-bottom textarea, .form-middle textarea {
     width: 755px;
@@ -396,6 +465,12 @@ html { scroll-behavior: smooth;}
     .form-bottom textarea, .form-middle textarea {
         width: 100%;
         font-size: 16px;
+    }
+}
+@media screen and (max-width:960px){
+    .form-bottom textarea, .form-middle textarea {
+        width: 220px;
+        font-size: 15px;
     }
 }
 
@@ -426,6 +501,14 @@ html { scroll-behavior: smooth;}
         font-size: 17px;
     }
 }
+@media screen and (max-width:960px){
+    .register-btn {
+        width: 120px;
+        height: 28px;
+        margin: 30px 0;
+        font-size: 16px;
+    }
+}
 
 .register-btn:hover {
     background-color: #1a4d6fcc;
@@ -439,7 +522,7 @@ html { scroll-behavior: smooth;}
 .memory-list {
     display: block;
     text-align: center;
-    margin-top: 42px;
+    margin: 100px 0;
     color: white;
     font-size: 14px;
     text-decoration: none;
@@ -447,13 +530,13 @@ html { scroll-behavior: smooth;}
 }
 
 .memory-list:hover {
-  opacity: 0.5;
+    opacity: 0.9;
 }
 
 
 /* ページトップボタン */
 
-.page-top-btn a {
+/* .page-top-btn a {
     display: block;
     width: 35px;
     margin: 86px auto;
@@ -462,7 +545,7 @@ html { scroll-behavior: smooth;}
 
 .page-top-btn a:hover {
     opacity: 0.5;
-}
+} */
 
 
 /* footer */

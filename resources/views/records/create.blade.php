@@ -11,7 +11,7 @@
     
     <title>新規登録</title>
 </head>
-<body>
+<body class="body">
     @extends('layouts.layouts')
     @section('content')
         <main class="main">
@@ -84,10 +84,6 @@
             </div>
             <div class="memory">
                 <a class="memory-list" href="{{ route('records.index') }}">>> 思い出一覧に戻る</a>
-            </div>
-            <!-- ページトップボタン -->
-            <div class="page-top-btn">
-                <a href="#page-top"><img src="top.png" alt=""></a>
             </div>
         </main>
     <script src="js/create.js"></script>
