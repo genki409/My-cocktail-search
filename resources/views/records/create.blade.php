@@ -11,7 +11,7 @@
     
     <title>新規登録</title>
 </head>
-<body>
+<body class="body">
     @extends('layouts.layouts')
     @section('content')
         <main class="main">
@@ -26,7 +26,7 @@
                             <div class="form-top">
                                 <div class="top-left">
                                     <div class="top-left-container">
-                                        <!-- 👇ここにプレビュー画像を追加する -->
+                                        <!-- ここにプレビュー画像を追加する -->
                                         <div class="upload-img">
                                             <div id="preview"></div>
                                         </div>
@@ -62,35 +62,18 @@
                                 </div>
                             </div>
                             <div class="form-middle">
-                                <div class="middle-lrft">
-                                    <div class="ingredient-top">
-                                        <h4>材料</h4>
-                                    </div>
-                                    <div class="left-increase">
-                                        <div class="increase">
-                                            <button class="puls">+</button>
-                                        </div>
-                                        <div class="ingredient-bottom">
-                                            <input type="text"name="ingredient" class="ingredient" placeholder="ジン">
-                                            <input type="text"name="ingredient2" class="ingredient2" placeholder="トニックウォーター">
-                                            <input type="text"name="ingredient3" class="ingredient3" placeholder="ライム">
-                                        </div>
-                                    </div>
+                                <div class="ingredient-top">
+                                    <h4>材料</h4>
                                 </div>
-                                <div class="middle-right">
-                                    <div class="quantity-top">
-                                        <h4>分量</h4>
-                                    </div>
-                                    <div class="quantity-bottom">
-                                        <input type="text" class="quantity" class="quantity"  placeholder="45ml">
-                                        <input type="text" class="quantity2" class="quantity2" placeholder="FullUP">
-                                        <input type="text" class="quantity3" class="quantity3" placeholder="1/6個">
-                                    </div>
+                                <div class="ingredient-text">
+                                    <textarea  name="ingredient" cols="110" rows="10" placeholder="材料や作り方など"></textarea>
                                 </div>
                             </div>
                             <div class="form-bottom">
-                                <h4>コメント（５００文字）</h4>
-                                <textarea  name="comment" cols="110" rows="10"></textarea>
+                                <h4>コメント</h4>
+                                <div class="comment">
+                                    <textarea  name="comment" cols="110" rows="10"></textarea>
+                                </div>
                             </div>
                             <!-- 登録ボタン -->
                             <div class="register">
@@ -101,10 +84,6 @@
             </div>
             <div class="memory">
                 <a class="memory-list" href="{{ route('records.index') }}">>> 思い出一覧に戻る</a>
-            </div>
-            <!-- ページトップボタン -->
-            <div class="page-top-btn">
-                <a href="#page-top"><img src="top.png" alt=""></a>
             </div>
         </main>
     <script src="js/create.js"></script>

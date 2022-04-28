@@ -67,7 +67,7 @@ class MemoController extends Controller
         $records->image4 = $request->image4;
         $records -> save();
 
-        // return view('records.show', compact('record'));
+        return view('records.show', compact('record'));
     }
 
     function destroy($id)
