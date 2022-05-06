@@ -306,6 +306,11 @@ html { scroll-behavior: smooth;}
         margin: 0 50px;
     }
 }
+@media screen and (max-width:520px){
+    .top-right {
+        margin: 0;
+    }
+}
 
 .top-right-container {
     display: flex;
@@ -324,6 +329,11 @@ html { scroll-behavior: smooth;}
     .top-right-container {
         width: 350px;
         margin: 0 auto;
+    }
+}
+@media screen and (max-width:520px){
+    .top-right-container {
+        width: 220px;
     }
 }
 
@@ -368,6 +378,12 @@ html { scroll-behavior: smooth;}
         font-size: 15px;
     }
 } 
+@media screen and (max-width:520px){
+    .date input, .name input, .base input, .taste input  {
+        width: 190px;
+        font-size: 13px;
+    }
+} 
 
 .featuru textarea {
     width: 353px;
@@ -389,6 +405,12 @@ html { scroll-behavior: smooth;}
         font-size: 15px;
     }
 }
+@media screen and (max-width:520px){
+    .featuru textarea {
+        width: 190px;
+        font-size: 13px;
+    }
+}
 
 .date, .name, .base, .taste, .featuru {
     font-size: 23px;
@@ -397,10 +419,17 @@ html { scroll-behavior: smooth;}
     margin-left: 20px;
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 @media screen and (max-width:960px){
     .date, .name, .base, .taste, .featuru {
         /* justify-content: space-around; */
+    }
+}
+@media screen and (max-width:520px){
+    .date, .name, .base, .taste, .featuru {
+        flex-direction: column;
+        margin-top: 20px;
     }
 }
 
@@ -408,7 +437,7 @@ html { scroll-behavior: smooth;}
     padding: auto, 0;
 } */
 
-.date {
+/* .date {
     margin-top: 57px;
 }
 
@@ -426,7 +455,7 @@ html { scroll-behavior: smooth;}
 
 .featuru {
     margin-top: 40px;
-}
+} */
 
 /* form-middle */
 
@@ -445,6 +474,13 @@ html { scroll-behavior: smooth;}
         flex-direction: row;
         /* margin: 30px 50px 0 50px; */
         justify-content: space-between;
+    }
+}
+@media screen and (max-width:520px){
+    .form-middle, .form-bottom {
+        width: 220px;
+        flex-direction: column;
+        margin-top: 20px;
     }
 }
 
@@ -484,6 +520,12 @@ html { scroll-behavior: smooth;}
     .form-bottom textarea, .form-middle textarea {
         width: 220px;
         font-size: 15px;
+    }
+}
+@media screen and (max-width:520px){
+    .form-bottom textarea, .form-middle textarea {
+        width: 190px;
+        font-size: 13px;
     }
 }
 
@@ -540,6 +582,11 @@ html { scroll-behavior: smooth;}
     font-size: 14px;
     text-decoration: none;
     transition: all 0.3s;
+}
+@media screen and (max-width:520px){
+    .memory-list{
+        margin: 60px 0;
+    }
 }
 
 .memory-list:hover {
