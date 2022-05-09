@@ -15,43 +15,49 @@
 
 <body>
     <header class="header" id="page-top">
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="globalMenuSp">
-            <ul class="item">
-                <li><a class="menu" href="/">ホーム</a></li>
-                @auth
-                    <li>
-                        <div>
-                            <a href="{{ route('logout') }}"
-                                onclick="confirm('ログアウトしてもよろしいですか?'); event.preventDefault();
-                                                                                                            document.getElementById('logout-form').submit();"
-                                class="menu2">
-                                ログアウト
-                            </a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
-                            </form>
-                        </div>
-                    </li>
-                @else
-                    <li><a class="menu2" href="{{ route('register') }}">新規登録</a></li>
-                    <li><a class="menu2" href="{{ route('login') }}">ログイン</a></li>
-                @endauth
-                <li><a class="menu3" href="search">お酒検索</a></li>
-                <li><a class="menu4" href="{{ route('records.index') }}">記録一覧</a></li>
-            </ul>
-        </nav>
+        <script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+            <div id="wrapper">
+                <p class="btn-gnavi">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </p>
+                <nav id="global-navi">
+                    <ul class="item">
+                        <li><a class="menu" href="/">ホーム</a></li>
+                        @auth
+                            <li>
+                                <div>
+                                    <a href="{{ route('logout') }}"
+                                        onclick="confirm('ログアウトしてもよろしいですか?'); event.preventDefault();
+                                                                                                                    document.getElementById('logout-form').submit();"
+                                        class="menu2">
+                                        ログアウト
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @else
+                            <li><a class="menu2" href="{{ route('register') }}">新規登録</a></li>
+                            <li><a class="menu2" href="{{ route('login') }}">ログイン</a></li>
+                        @endauth
+                        <li><a class="menu3" href="search">お酒検索</a></li>
+                        <li><a class="menu4" href="{{ route('records.index') }}">記録一覧</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <script src="js/layouts.js"></script>
     </header>
     @yield('content')
     <footer class="footer">
         <h3>ここ酒</h3>
         <p>copyright &copy; 2022 the 5th class All Rights Reserved</p>
     </footer>
-    <script src="js/layouts.js"></script>
 </body>
 
 </html>
