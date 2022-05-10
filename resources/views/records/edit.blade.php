@@ -12,7 +12,7 @@
     <title>編集</title>
 </head>
 
-<body>
+<body class="body">
     @extends('layouts.layouts')
     @section('content')
         <main class="main">
@@ -34,7 +34,7 @@
                                     </div>
                                     <label class="upload-label">
                                         写真を選ぶ
-                                        <input type="file" id="example">
+                                        <input type="file" id="example" name="image" multiple>
                                     </label>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@
                                 <div class="top-right-container">
                                     <div class="date">
                                         <label for="start">日付</label>
-                                        <input type="date" id="today" name="date" value="2022-04-02">
+                                        <input type="date" id="today" name="date-form" >
                                     </div>
                                     <div class="name">
                                         <label for="name">名前</label>
@@ -64,35 +64,19 @@
                             </div>
                         </div>
                         <div class="form-middle">
-                            <div class="middle-lrft">
-                                <div class="ingredient-top">
-                                    <h4>材料</h4>
-                                </div>
-                                <div class="left-increase">
-                                    <div class="increase">
-                                        <button class="puls">+</button>
-                                    </div>
-                                    <div class="ingredient-bottom">
-                                        <input type="text" name="ingredient" class="ingredient" value="{{ $record->ingredient }}">
-                                        <input type="text" name="ingredient2" class="ingredient2" value="{{ $record->ingredient2 }}">
-                                        <input type="text" name="ingredient3" class="ingredient3" value="{{ $record->ingredient3 }}">
-                                    </div>
-                                </div>
+                            <div class="ingredient-top">
+                                <h4>材料</h4>
                             </div>
-                            <div class="middle-right">
-                                <div class="quantity-top">
-                                    <h4>分量</h4>
-                                </div>
-                                <div class="quantity-bottom">
-                                    <input type="text" name="quantity" class="quantity"  value="{{ $record->quantity }}">
-                                    <input type="text" name="quantity2" class="quantity2" value="{{ $record->quantity2 }}">
-                                    <input type="text" name="quantity3" class="quantity3" value="{{ $record->quantity3 }}">
-                                </div>
+                            <div class="ingredient-text">
+                                <textarea  name="ingredient" cols="110" rows="10" placeholder="材料や作り方など"></textarea>
+                                    </div>
                             </div>
                         </div>
                         <div class="form-bottom">
-                            <h4>コメント（５００文字）</h4>
-                            <textarea  name="comment" cols="110" rows="10">{{ $record->comment }}</textarea>
+                            <h4>コメント</h4>
+                            <div class="comment">
+                                <textarea  name="comment" cols="110" rows="10">{{ $record->comment }}</textarea>
+                            </div>
                         </div>
                         <!-- 登録ボタン -->
                         <div class="register-derete">
@@ -107,11 +91,7 @@
                 </div>
             </div>
             <div class="memory">
-                <a class="memory-list" href="">>> 思い出一覧に戻る</a>
-            </div>
-            <!-- ページトップボタン -->
-            <div class="page-top-btn">
-                <a href="#page-top"><img src="page_top.png" alt=""></a>
+                <a class="memory-list" href="{{ route('records.index') }}">>> 思い出一覧に戻る</a>
             </div>
         </main>
         <script src="js/edit.js"></script>
