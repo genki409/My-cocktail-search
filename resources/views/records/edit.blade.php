@@ -63,21 +63,21 @@
                                   </div>
                               </div>
                           </div>
-                          <div class="form-middle">
-                              <div class="ingredient-top">
-                                  <h4>材料</h4>
-                              </div>
-                              <div class="ingredient-text">
+                            <div class="form-middle">
+                                <div class="ingredient-top">
+                                    <h4>材料</h4>
+                                </div>
+                                <div class="ingredient-text">
                                   <textarea  name="ingredient" cols="110" rows="10" placeholder="材料や作り方など"></textarea>
-                                      </div>
-                              </div>
-                          </div>
-                          <div class="form-bottom">
-                            <h4>コメント</h4>
-                            <div class="comment">
-                                <textarea  name="comment" cols="110" rows="10">{{ $record->comment }}</textarea>
+                                </div>
                             </div>
-                        </div>
+                          
+                            <div class="form-bottom">
+                                <h4>コメント</h4>
+                                <div class="comment">
+                                    <textarea  name="comment" cols="110" rows="10">{{ $record->comment }}</textarea>
+                                </div>
+                            </div>
                         <!-- 登録ボタン -->
                         <div class="register-derete">
                             <button type="submit" class="register-btn">登録する</button>
