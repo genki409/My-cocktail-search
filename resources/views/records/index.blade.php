@@ -30,69 +30,12 @@
                             <h1>出会ったお酒たち。</h1>
                         </div><!-- /.main-top-left -->
                         <div class="main-top-right">
-                            <nav class="navbar navbar-expand-lg navbar-light">
-                                <div class="container-fluid">
-                                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="{{ route('records.create') }}"><img
-                                                        src="img/record-list_btn1-1600.jpg" alt="思い出登録"></a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#"><img src="img/record-list_btn2-1600.jpg"
-                                                        alt="並べ替え"></a>
-                                            </li>
-                                        </ul>
-                                        <div class="memory-count">
-                                            <p>思い出保存数 46</p>
-                                        </div><!-- /.memory-count -->
-                                        <form class="d-flex search-box">
-                                            <input class="form-control fas" type="search" placeholder="&#xf002; 思い出を検索"
-                                                aria-label="Search">
-                                            <button class="btn btn-outline-success" type="submit"
-                                                style="display: none;"></button>
-                                        </form>
-                                    </div><!-- /.collapse /.navbar-collapse -->
-                                </div><!-- /.container-fluid -->
-                            </nav>
+                            <div class="creat-jump">
+                                <a href="{{ route('records.create') }}"><button class="memories-record">思い出を記録</button></a>
+                            </div>
+
                         </div><!-- /.main-top-right -->
                     </div><!-- /.main-top -->
-                    <div class="pagination pagination-top">
-                        <div class="pagination-inner">
-                            <div class="pagination-page">
-                                <strong>
-                                    <span>1</span>
-                                </strong>
-                                <a href="#">
-                                    <span>2</span>
-                                </a>
-                                <a href="#">
-                                    <span>3</span>
-                                </a>
-                                <a href="#">
-                                    <span>4</span>
-                                </a>
-                                <a href="#">
-                                    <span>5</span>
-                                </a>
-                                <span class="pagination-omission">…</span>
-                            </div><!-- /.pagination_page -->
-                            <div class="pagination-next">
-                                <a href="#">
-                                    <span>次</span>
-                                    <i class="fas fa-angle-right"></i>
-                                </a>
-                            </div><!-- /.pagination_next-->
-                            <div class="pagination-last">
-                                <a href="#">
-                                    <span>最後</span>
-                                    <i class="fas fa-angle-double-right"></i>
-                                </a>
-                            </div><!-- /.pagination_last -->
-                        </div><!-- /.pagination-inner -->
-                    </div><!-- /.pagination-top -->
-
-
                     <div class="cards">
                         <div class="row">
                             @foreach ($records as $record)
@@ -109,40 +52,6 @@
                             @endforeach
                         </div><!-- /.row -->
                     </div><!-- /.cards -->
-                    <div class="pagination pagination-bottom">
-                        <div class="pagination-inner">
-                            <div class="pagination-page">
-                                <strong>
-                                    <span>1</span>
-                                </strong>
-                                <a href="#">
-                                    <span>2</span>
-                                </a>
-                                <a href="#">
-                                    <span>3</span>
-                                </a>
-                                <a href="#">
-                                    <span>4</span>
-                                </a>
-                                <a href="#">
-                                    <span>5</span>
-                                </a>
-                                <span class="pagination-omission">…</span>
-                            </div><!-- /.pagination_page -->
-                            <div class="pagination-next">
-                                <a href="#">
-                                    <span>次</span>
-                                    <i class="fas fa-angle-right"></i>
-                                </a>
-                            </div><!-- /.pagination_next-->
-                            <div class="pagination-last">
-                                <a href="#">
-                                    <span>最後</span>
-                                    <i class="fas fa-angle-double-right"></i>
-                                </a>
-                            </div><!-- /.pagination_last -->
-                        </div><!-- /.pagination-inner -->
-                    </div><!-- /.pagination-bottom -->
                     <div class="page-top-btn">
                         <a href="#page-top"><i class="fas fa-angle-up"></i></a>
                     </div><!-- /.page-top -->
