@@ -149,9 +149,19 @@
     border: none !important;
     border-radius: 49px !important;
 }
-@media (min-width: 1550px) {
+@media (max-width: 1201px) {
     .card {
-        height: 325px;
+        height: 250px;
+    }
+}
+@media (max-width: 993px) {
+    .card {
+        height: 220px;
+    }
+}
+@media (max-width: 769px) {
+    .card {
+        height: 200px;
     }
 }
 .card:hover {
