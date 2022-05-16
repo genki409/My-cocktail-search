@@ -30,7 +30,7 @@
                             <h1>出会ったお酒たち。</h1>
                         </div><!-- /.main-top-left -->
                         <div class="main-top-right">
-                            <div class="creat-jump">
+                            <div class="create-btn">
                                 <a href="{{ route('records.create') }}"><button class="memories-record">思い出を記録</button></a>
                             </div>
 

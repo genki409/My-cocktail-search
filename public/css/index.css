@@ -135,9 +135,10 @@
     }
 }
 
-.creat-jump{
+.create-btn{
     text-align: right;
 }
+
 
 .main-top-right .memories-record{
     width: 160px;
@@ -146,6 +147,24 @@
     font-size: 19px;
     font-family: "せのびレギュラー";
     background-color: rgba(109, 106, 99, 0.68);
+}
+@media (max-width: 993px) {
+    .main-top-right .memories-record {
+        width: 150px;
+        height: 45px;
+    }
+}
+@media (max-width: 769px) {
+    .main-top-right .memories-record {
+        width: 140px;
+        height: 40px;
+    }
+}
+@media (max-width: 576px) {
+    .main-top-right .memories-record {
+        width: 130px;
+        height: 35px;
+    }
 }
 .main-top-right .memories-record:hover {
     background-color: rgba(145, 141, 133, 0.68);
