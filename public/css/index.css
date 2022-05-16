@@ -43,6 +43,26 @@
         max-width: 1525px;
     }
 }
+@media (max-width: 1201px) {
+    .container-bg::after {
+        width: 400px;
+    }
+}
+@media (max-width: 993px) {
+    .container-bg::after {
+        width: 330px;
+    }
+}
+@media (max-width: 769px) {
+    .container-bg::after {
+        width: 270px;
+    }
+}
+@media (max-width: 575px) {
+    .container-bg::after {
+        width: 200px;
+    }
+}
 
 /* ------------ header ------------ */
 .header {
@@ -94,6 +114,24 @@
     .main-top-left h1 {
         font-size: 28px;
         padding-left: 19px;
+    }
+}
+@media (max-width: 1201px) {
+    .main-top-left h1 {
+        font-size: 23px;
+        padding-left: 17px;
+    }
+}
+@media (max-width: 993px) {
+    .main-top-left h1 {
+        font-size: 19px;
+        padding-left: 15px;
+    }
+}
+@media (max-width: 769px) {
+    .main-top-left h1 {
+        font-size: 15px;
+        padding-left: 13px;
     }
 }
 
@@ -156,12 +194,14 @@
 }
 @media (max-width: 993px) {
     .card {
-        height: 220px;
+        height: 260px;
+        width: 200px;
     }
 }
 @media (max-width: 769px) {
     .card {
-        height: 200px;
+        height: 180px;
+        width: 130px;
     }
 }
 .card:hover {
@@ -190,6 +230,21 @@
     border-radius: 0px 0px 38px 38px !important;
     color: #fff;
 }
+@media (max-width: 1201px) {
+    .card-body {
+        height: 70px;
+    }
+}
+@media (max-width: 993px) {
+    .card-body {
+        height: 60px;
+    }
+}
+@media (max-width: 769px) {
+    .card-body {
+    height: 50px;
+    }
+}
 .card-title {
     margin-top: 12px;
     margin-bottom: 9px;
@@ -203,6 +258,24 @@
         font-size: 22px;
     }
 }
+@media (max-width: 1201px) {
+    .card-title {
+        margin-top: 8px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 993px) {
+    .card-title {
+        margin-top: 6px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 769px) {
+    .card-title {
+        margin-top: 2px;
+        font-size: 11px;
+    }
+}
 .card-date {
     margin-bottom: 0;
     font-family: "Noto Serif Myanmar";
@@ -213,6 +286,23 @@
         font-size: 15px;
     }
 }
+@media (max-width: 1201px) {
+    .card-date {
+        font-size: 13px;
+    }
+}
+@media (max-width: 993px) {
+    .card-date {
+        font-size: 11px;
+    }
+}
+@media (max-width: 769px) {
+    .card-date {
+        font-size: 9px;
+    }
+}
+
+
 
 /* --------------------------------
           .page-top-btn
