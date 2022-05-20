@@ -32,23 +32,25 @@ footer {
 /* --------------------------------
           main-top
 -------------------------------- */
-.main-top {
+.main {
+}
+.page-top {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-top: 127px;
+  margin-top: 50px;
   margin-right: 58px;
   color: #fff;
 }
 
-.main-top::after {
+.page-top::after {
   content: url(img/record-list_cocktail.png);
   position: absolute;
   top: 97px;
   right: 55px;
 }
 
-.main-top h1 {
+.page-top h1 {
   width: 430px;
   border-bottom: solid 1px #FCE4E7;
   text-align: right;
@@ -57,104 +59,18 @@ footer {
   padding-bottom: 23px;
 }
 
-.main-top-right {
-  margin-top: -22px;
-}
-
-.main-top-right .navbar {
-  background-color: transparent !important;
-}
-
-.main-top-right .navbar .container-fluid {
-  padding-right: var(--bs-gutter-x, 1rem);
-}
-
-.navbar .navbar-nav .nav-item:nth-child(2) {
-  margin-left: 18px;
-}
-
-.navbar .navbar-nav .nav-link {
-  padding: 0;
-  transition: all 0.9s;
-}
-
-.navbar .navbar-nav .nav-link:hover {
-  opacity: 0.5;
-}
-
-.navbar .navbar-nav .nav-link img {
-  border-radius: 11px;
-}
-
-.nav-link {
-  margin-top: 5px;
-  margin-right: 5px;
-}
-
-.memory-count {
-  position: absolute;
-  top: -24px;
-  right: 17px;
-  font-family: "ヒラギノ丸ゴ ProN";
-  font-size: 20px;
-  color: #fff;
-}
-
-.memory-count p {
-  margin: 0;
-}
-
-.search-box .form-control {
-  width: 356px;
-  height: 52px;
-  border: 0;
-  border-radius: 10px;
-  font-family: "ヒラギノ丸ゴ ProN", "FontAwesome";
-  font-size: 23px;
-  background: rgba(255, 255, 255, 0.68);
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4) inset;
-}
-
-.search-box .form-control::placeholder {
-  color: #7e6f5a;
-}
-
 /* -------------------
 詳細画面
 ------------------- */
 
 
-.nav1 {
+.main-top {
   display: flex;
   justify-content: center;
-  margin-top: 45px;
+  margin: 0 auto;
 }
 
-.nav2 {
-  display: flex;
-  justify-content: space-between;
-  font-family: 'ヒラギノ丸ゴ';
-  font-size: 18px;
-  width: 346px;
-}
-
-.nav2 a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.nav>.free {
-  line-height: 2.6;
-  width: 342px;
-  border-radius: 15px;
-}
-
-.frame {
-  display: flex;
-  justify-content: center;
-}
-
-.detail {
+.main-top-container {
   width: 1325px;
   height: 126px;
   margin-top: 47px;
@@ -163,7 +79,7 @@ footer {
   background: linear-gradient(to bottom, #BAA68B, #5D5346);
 }
 
-.head {
+.main-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -173,21 +89,24 @@ footer {
   font-family: 'ヒラギノ丸ゴ';
 }
 
-.head img {
+.main-head img {
   padding-right: 57px;
   padding-top: 10px;
 }
 
-.head a {
+.main-head a {
   color: #fff;
   text-decoration: none;
 }
 
-.center {
+.displey-container {
   width: 1325px;
   height: auto;
+  margin: 0 auto;
   background-color: #fff;
   opacity: 0.8;
+  display: flex;
+  justify-content: center;
 }
 
 .centerin {
@@ -198,8 +117,9 @@ footer {
   margin-top: 60px;
 }
 
-.calumn {
-  width: 496.31px;
+.display-left {
+  width: 496px;
+  margin: 0 auto;
 }
 
 .calumn p {
@@ -210,7 +130,7 @@ footer {
   font-weight: 600;
 }
 
-.calumn h1 {
+.display-img h1 {
   font-size: 40px;
   font-family: 'Noto Serif Myanmar';
   color: #2B843C;
@@ -218,22 +138,29 @@ footer {
   font-weight: bold;
 }
 
-.left img {
+.display-img img {
   width: 496.31px;
   height: 579.17px;
+  transition: .3s;
+}
+/* display-right */
+
+.display-right{
+  margin: 0 auto;
 }
 
-.block {
+.word {
   display: flex;
   width: 477px;
+  margin-bottom: 3px;
   font-family: 'ヒラギノ丸ゴ ProN';
 }
 
-.right {
+.display-right {
   margin-top: 101px;
 }
 
-.square {
+.word-item {
   background-color: #355469;
   font-size: 23px;
   width: 108px;
@@ -246,9 +173,6 @@ footer {
   color: #fff;
 }
 
-.block {
-  margin-bottom: 3px;
-}
 
 .material {
   width: 477px;
@@ -292,7 +216,7 @@ footer {
   margin-top: 75px;
 }
 
-.one1 {
+.text {
   text-align: left;
   padding-top: 17px;
   padding-bottom: 26px;
