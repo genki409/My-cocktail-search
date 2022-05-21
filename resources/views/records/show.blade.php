@@ -14,30 +14,31 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
+@extends('layouts.layouts')
+@section('content')
 <body>
-    @extends('layouts.layouts')
-    @section('content')
+
+    <main class="main">
         <div class="page-top">
             <div class="page-top-left">
                 <h1>出会ったお酒たち。</h1>
             </div><!-- /.page-top-left -->
         </div><!-- /.page-top -->
 
-        <div class="main">
+        <div class="main-container">
             <section class="main-top">
                 <div class="main-top-container">
                     <div class="main-head">
                         <a href="#">>> 思い出一覧に戻る</a>
-                        <a href="{{ route('records.edit', $record->id) }}"><img src="/img/show-edit-button.png"
-                                height="80px" alt="編集する"></a>
+                        <a class="edit-btn" href="{{ route('records.edit', $record->id) }}"><button>編集する</button></a>
                     </div>
                 </div>
             </section>
 
             <section class="display">
-                    <div class="displey-container">
+                    <div class="display-container">
                         <div class="display-left">
-                            <div class="display-img">
+                            <div class="display-item">
                                 <p>{{ $record->created_at }}</p>
                                 <h1>{{ $record->name }}</h1>
                                 <img src="/img/show-free.png" alt="お酒の写真">
@@ -45,26 +46,26 @@
                         </div>
                         <div class="display-right">
                             <div class="word">
-                                <p class="item">ベース</p>
-                                <p class="none">{{ $record->base }}</p>
+                                <h3>ベース</h3>
+                                <p class="note">{{ $record->base }}</p>
                             </div>
                             <div class="word">
-                                <p class="item">味</p>
-                                <p class="none">{{ $record->taste }}</p>
+                                <h3>味</h3>
+                                <p class="note">{{ $record->taste }}</p>
                             </div>
                             <div class="word">
-                                <p class="item">特徴</p>
-                                <p class="none">{{ $record->featuru }}</p>
+                                <h3>特徴</h3>
+                                <p class="note">{{ $record->featuru }}</p>
                             </div>
 
-                            <div class="material">
-                                <h1>材料</h1>
-                                <div class="one">
-                                    <div class="test">{{ $record->ingredient }}</div>
+                            <div class="right-middle">
+                                <div class="right-middle-top">
+                                    <h3>材料</h3>
+                                    <div class="sentence">{{ $record->ingredient }}</div>
                                 </div>
-                                <div class="material">
-                                    <h1>コメント</h1>
-                                    <div class="text">
+                                <div class="right-middle-bottom">
+                                    <h3>コメント</h3>
+                                    <div class="sentence">
                                         {{ $record->comment }}
                                     </div>
                                 </div>
@@ -75,10 +76,10 @@
                     </div>
             </section>
         </div>
+    </main>
 
-        <div class="push"></div>
-    @endsection
 
 </body>
+@endsection
 
 </html>

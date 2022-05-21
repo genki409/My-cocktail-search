@@ -3,12 +3,9 @@
   src: url("../fonts/Senobi-Gothic.ttf");
 }
 
-header {
-  height: 129px;
-}
 
-body {
-  width: 100%;
+.main {
+  width: auto;
   height: auto;
   color: #fff;
   font-size: 30px;
@@ -20,35 +17,60 @@ body {
 }
 
 
-footer {
-  width: 100%;
-  height: 135.66px;
-  background-color: #333;
-  position: absolute;
-  bottom: 0;
-}
 
 
 /* --------------------------------
           main-top
 -------------------------------- */
-.main {
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-container .main-top {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.main-top-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 64px ;
+  background: -moz-linear-gradient(top, #BAA68B, #5D5346);
+  background: -webkit-linear-gradient(top, #BAA68B, #5D5346);
+  background: linear-gradient(to bottom, #BAA68B, #5D5346);
+}
+.main-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 64px;
+  font-size: 25px;
+  font-family: 'ヒラギノ丸ゴ';
+}
+.main-head img {
+  padding-right: 57px;
+  padding-top: 10px;
+}
+.main-head a {
+  color: #fff;
+  text-decoration: none;
 }
 .page-top {
   position: relative;
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  margin-right: 58px;
   color: #fff;
 }
 
-.page-top::after {
+/* .page-top::after {
   content: url(img/record-list_cocktail.png);
   position: absolute;
   top: 97px;
   right: 55px;
-}
+} */
 
 .page-top h1 {
   width: 430px;
@@ -59,48 +81,34 @@ footer {
   padding-bottom: 23px;
 }
 
+.main-head .edit-btn {
+  height: 70px;
+  width: 130px;
+
+}
+
+.edit-btn button {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(36, 114, 70);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.edit-btn button:hover {
+  opacity: 0.8;
+  transition: .3s;
+}
+
 /* -------------------
 詳細画面
 ------------------- */
+.display {
+  width: 100%;
 
-
-.main-top {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
 }
-
-.main-top-container {
-  width: 1325px;
-  height: 126px;
-  margin-top: 47px;
-  background: -moz-linear-gradient(top, #BAA68B, #5D5346);
-  background: -webkit-linear-gradient(top, #BAA68B, #5D5346);
-  background: linear-gradient(to bottom, #BAA68B, #5D5346);
-}
-
-.main-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 25px;
-  padding-left: 64px;
-  font-size: 25px;
-  font-family: 'ヒラギノ丸ゴ';
-}
-
-.main-head img {
-  padding-right: 57px;
-  padding-top: 10px;
-}
-
-.main-head a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.displey-container {
-  width: 1325px;
+.display-container {
+  width: 100%;
   height: auto;
   margin: 0 auto;
   background-color: #fff;
@@ -109,28 +117,19 @@ footer {
   justify-content: center;
 }
 
-.centerin {
-  width: 1078.88px;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  margin-top: 60px;
-}
 
 .display-left {
   width: 496px;
   margin: 0 auto;
 }
 
-.calumn p {
-  font-size: 17px;
-  font-family: 'Noto Serif Myanmar';
-  font-weight: SemiBold;
-  color: #00577C;
-  font-weight: 600;
+.display-item p {
+  font-size: 20px;
+  color: #1B2A35;
+  margin: 20px 0;
 }
 
-.display-img h1 {
+.display-item h1 {
   font-size: 40px;
   font-family: 'Noto Serif Myanmar';
   color: #2B843C;
@@ -138,33 +137,34 @@ footer {
   font-weight: bold;
 }
 
-.display-img img {
-  width: 496.31px;
-  height: 579.17px;
+.display-item img {
+  width: 496px;
+  height: 579px;
   transition: .3s;
 }
+
 /* display-right */
 
 .display-right{
   margin: 0 auto;
+  margin-top: 100px;
 }
 
 .word {
   display: flex;
   width: 477px;
-  margin-bottom: 3px;
+  height: 50px;
+  margin: 30px 0;
   font-family: 'ヒラギノ丸ゴ ProN';
+  font-size: 30px;
 }
 
-.display-right {
-  margin-top: 101px;
-}
 
-.word-item {
+.word h3, .right-middle h3 {
   background-color: #355469;
   font-size: 23px;
-  width: 108px;
-  height: 52px;
+  width: 110px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,25 +172,7 @@ footer {
     6px 6px 5px 3px rgba(0, 0, 0, .2) inset;
   color: #fff;
 }
-
-
-.material {
-  width: 477px;
-  color: black;
-}
-
-.sub {
-  font-size: 30px;
-  font-family: 'Noto Serif Myanmar';
-  color: #00577C;
-  border-bottom: solid 1px #BAA68B;
-  font-weight: bold;
-  margin-top: 47px;
-  padding-left: 7px;
-  margin-bottom: 0;
-}
-
-.none {
+.note {
   color: #355469;
   font-size: 25px;
   display: flex;
@@ -198,53 +180,26 @@ footer {
   padding-left: 29px;
 }
 
-.material .one {
+.right-middle {
   width: 477px;
+  height: 100%;
+  color: black;
+}
+
+.right-middle-top, .right-middle-bottom {
+  width: 477px;
+  height: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  /* justify-content: space-between; */
   border-bottom: solid 1px #BAA68B;
-  font-family: 'Hiragino Kaku Gothic ProN';
   font-size: 20px;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  padding-left: 10px;
-  padding-right: 15px;
+  padding: 27px 0;
 }
 
-.sub1 {
-  margin-top: 75px;
-}
-
-.text {
+.sentence {
   text-align: left;
-  padding-top: 17px;
-  padding-bottom: 26px;
-  margin-bottom: 100px;
-  padding-left: 10px;
-  padding-right: 10px;
+  height: auto;
   letter-spacing: 0.2em
 }
 
-.detail img {
-  transition: .3s;
-}
-
-.detail img:hover,
-.btn:hover {
-  opacity: 0.8;
-  transition: .3s;
-}
-
-.detail img:active,
-.nav-link img:active {
-  -webkit-transform: translate(0, 2px);
-  -moz-transform: translate(0, 2px);
-  transform: translate(0, 2px);
-  border-bottom: none;
-}
-
-.push {
-  height: 412px;
-
-}
