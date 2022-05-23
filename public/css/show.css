@@ -39,7 +39,6 @@
           main-top
 -------------------------------- */
 .main-container {
-  width: 1300px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -67,7 +66,7 @@
   width: 100%;
 }
 .main-top-container {
-  width: 100%;
+  width: 940px;
   height: 100%;
   margin-top: 64px ;
   background: -moz-linear-gradient(top, #BAA68B, #5D5346);
@@ -76,16 +75,16 @@
 }
 @media screen and (max-width:1100px){
   .main-top-container {
-      width: 940px;
+    width: 830px;
   }
 }
 @media screen and (max-width:960px){
-  . {
-      
+  .main-top-container {
+    width: 450px;
   }
 }
 @media screen and (max-width:520px){
-  . {
+  .main-top-container {
       
   }
 }
@@ -98,56 +97,52 @@
   font-family: 'ヒラギノ丸ゴ';
 }
 @media screen and (max-width:1100px){
-  . {
-      
+  .main-head {
+    margin: 22px 58px;
   }
 }
 @media screen and (max-width:960px){
-  . {
-      
+  .main-head {
+    margin: 19px 52px;
   }
 }
 @media screen and (max-width:520px){
-  . {
-      
+  .main-head {
+    margin: 16px 47px;
   }
 }
 .main-head a {
   color: #fff;
   text-decoration: none;
+  font-size: 25px;
 }
 @media screen and (max-width:1100px){
-  . {
-      
+  .main-head a {
+    font-size: 18px;
   }
 }
 @media screen and (max-width:960px){
-  . {
-      
+  .main-head a {
+    font-size: 14px;
   }
 }
 @media screen and (max-width:520px){
-  . {
-      
+  .main-head a {
+    font-size: 11px;
   }
 }
 .page-top {
   position: relative;
   display: flex;
   justify-content: space-between;
-  /* margin-top: 50px; */
   color: #fff;
+  padding-top: 70px;
 }
-.page-top-left {
-  padding-top: 100px;
+@media screen and (max-width:960px){
+  .page-top {
+    padding-top: 50px;
+  }
 }
-
-/* .page-top::after {
-  content: url(img/record-list_cocktail.png);
-  position: absolute;
-  top: 97px;
-  right: 55px;
-} */
 
 .page-top h1 {
   width: 430px;
@@ -157,11 +152,25 @@
   font-family: 'はれのそら明朝';
   padding-bottom: 23px;
 }
-
-.main-head a {
-  color: #fff;
-
+@media screen and (max-width:1100px){
+  .page-top h1 {
+    font-size: 35px;
+    width: 360px;
+  }
 }
+@media screen and (max-width:960px){
+  .page-top h1 {
+    font-size: 30px;
+    width: 320px;
+  }
+}
+@media screen and (max-width:520px){
+  .page-top h1 {
+    font-size: 25px;
+    width: 280px;
+  }
+}
+
 .main-head a:hover {
   opacity: 0.8;
   transition: .3s;
@@ -170,7 +179,6 @@
 .main-head .edit-btn {
   height: 70px;
   width: 130px;
-
 }
 @media screen and (max-width:1100px){
   .main-head .edit-btn {
@@ -180,7 +188,8 @@
 }
 @media screen and (max-width:960px){
   .main-head .edit-btn {
-      
+    height: 45px;
+    width: 90px;
   }
 }
 @media screen and (max-width:520px){
@@ -204,7 +213,7 @@
 }
 @media screen and (max-width:960px){
   .edit-btn button {
-      
+    font-size: 15px;
   }
 }
 @media screen and (max-width:520px){
@@ -227,7 +236,7 @@
   margin-bottom: 100px;
 }
 .display-container {
-  width: 100%;
+  width: 940px;
   height: auto;
   margin: 0 auto;
   background-color: #fff;
@@ -237,12 +246,13 @@
 }
 @media screen and (max-width:1100px){
   .display-container {
-      width: 940px;
+      width: 830px;
   }
 }
 @media screen and (max-width:960px){
   .display-container {
-      
+      flex-direction: column;
+      width: 450px;
   }
 }
 @media screen and (max-width:520px){
@@ -252,22 +262,22 @@
 }
 
 .display-left {
-  width: 496px;
+  width: 450px;
   margin: 0 auto;
 }
 @media screen and (max-width:1100px){
   .display-left {
-      width: 450px;
+    width: 400px;
   }
 }
 @media screen and (max-width:960px){
   .display-left {
-      
+    width: 350px;
   }
 }
 @media screen and (max-width:520px){
   .display-left {
-      
+    width: 300px;
   }
 }
 
@@ -328,20 +338,20 @@
 }
 @media screen and (max-width:1100px){
   .display-image {
-    width: 350px;
-    height: 490px;
+    width: 300px;
+    height: 430px;
   }
 }
 @media screen and (max-width:960px){
   .display-image {
-    /* width: 400px;
-    height: 540px; */
+    width: 270px;
+    height: 400px;
   }
 }
 @media screen and (max-width:520px){
   .display-image {
-    /* width: 400px;
-    height: 540px; */
+    width: 240px;
+    height: 360px;
   }
 }
 
@@ -360,12 +370,12 @@
 }
 @media screen and (max-width:1100px){
   .display-right {
-      width: auto;
+    width: auto;
   }
 }
 @media screen and (max-width:960px){
   .display-right {
-      
+  margin-top: 0;
   }
 }
 @media screen and (max-width:520px){
@@ -376,7 +386,6 @@
 
 .word {
   display: flex;
-  /* width: 477px; */
   height: 50px;
   margin: 30px 0;
   font-family: 'ヒラギノ丸ゴ ProN';
@@ -384,12 +393,12 @@
 }
 @media screen and (max-width:1100px){
   .word {
-      
+    font-size: 26px;
   }
 }
 @media screen and (max-width:960px){
   .word {
-      
+    font-size: 22px;
   }
 }
 @media screen and (max-width:520px){
@@ -401,7 +410,7 @@
 
 .word h3, .right-middle h3 {
   background-color: #355469;
-  font-size: 23px;
+  font-size: 25px;
   width: 110px;
   height: 50px;
   display: flex;
@@ -412,18 +421,18 @@
   color: #fff;
 }
 @media screen and (max-width:1100px){
-  . {
-      
+  .word h3, .right-middle h3 {
+    font-size: 22px;
   }
 }
 @media screen and (max-width:960px){
-  . {
-      
+  .word h3, .right-middle h3 {
+    font-size: 19px;
   }
 }
 @media screen and (max-width:520px){
-  . {
-      
+  .word h3, .right-middle h3 {
+    font-size: 17px;
   }
 }
 
@@ -436,18 +445,18 @@
   margin: auto 0;
 }
 @media screen and (max-width:1100px){
-  . {
-      
+  .note {
+    font-size: 22px;
   }
 }
 @media screen and (max-width:960px){
-  . {
-      
+  .note {
+    font-size: 17px;
   }
 }
 @media screen and (max-width:520px){
-  . {
-      
+  .note {
+    font-size: 15px;
   }
 }
 
@@ -477,47 +486,48 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   border-bottom: solid 1px #BAA68B;
   font-size: 20px;
-  padding: 27px 0;
+  margin-top: 27px;
   
 }
 @media screen and (max-width:1100px){
   .right-middle-top, .right-middle-bottom {
-      width: 400px;
+    width: 350px;
+    margin-top: 20px;
   }
 }
 @media screen and (max-width:960px){
   .right-middle-top, .right-middle-bottom {
-      
+    width: 300px;
   }
 }
 @media screen and (max-width:520px){
   .right-middle-top, .right-middle-bottom {
-      
+    width: 250px;
   }
 }
 
 .sentence {
   text-align: left;
   height: auto;
-  letter-spacing: 0.2em
-  
+  letter-spacing: 0.2em;
+  color: #355469;
+  font-size: 29px;
 }
 @media screen and (max-width:1100px){
-  . {
-      
+  .sentence {
+    font-size: 22px;
   }
 }
 @media screen and (max-width:960px){
-  . {
-      
+  .sentence {
+    font-size: 17px;
   }
 }
 @media screen and (max-width:520px){
-  . {
-      
+  .sentence {
+    font-size: 15px;
   }
 }
 
