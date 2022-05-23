@@ -55,19 +55,17 @@
                             </div>
                             <div class="word">
                                 <h3>特徴</h3>
-                                <p class="note">{{ $record->featuru }}</p>
+                                <p class="note">{{ $record->feature }}</p>
                             </div>
 
                             <div class="right-middle">
                                 <div class="right-middle-top">
                                     <h3>材料</h3>
-                                    <div class="sentence">{{ $record->ingredient }}</div>
+                                    <p class="sentence">{{ $record->ingredient }}</p>
                                 </div>
                                 <div class="right-middle-bottom">
                                     <h3>コメント</h3>
-                                    <div class="sentence">
-                                        {{ $record->comment }}
-                                    </div>
+                                    <p class="sentence">{{ $record->comment }}</p>
                                 </div>
 
 
