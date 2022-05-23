@@ -246,10 +246,6 @@ html { scroll-behavior: smooth;}
     #preview {
         width: 190px;
         height: 270px;
-    }
-}
-@media screen and (max-width:520px){
-    #preview {
         margin-top: 30px;
     }
 }
