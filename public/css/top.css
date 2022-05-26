@@ -62,6 +62,155 @@ body {
 /* --------------------------------
           .main-top
 -------------------------------- */
+/* ナビバー */
+.navbar .container {
+    max-width: 1320px;
+}
+.navbar-expand-md {
+    height: 100px;
+    background-color: inherit !important;
+}
+@media (max-width: 599px) {
+    .navbar-expand-md {
+        height: 70px;
+    }
+}
+.navbar-light .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: #FCE4E7;
+    transition: all 0.5s;
+}
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #FCE4E7;
+    opacity: 0.7;
+}
+.navbar-light .navbar-nav.auth .nav-link {
+    color: #FCE4E7;
+}
+.navbar-light .navbar-nav.auth .nav-link.dropdown-toggle {
+    font-size: 20px;
+}
+.navbar-brand {
+    font-family: "せのびレギュラー";
+    font-size: 25px;
+    text-shadow: 3px 3px 3px black;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 17px;
+}
+.navbar-expand-md .navbar-nav .nav-item:first-child {
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.navbar-light .navbar-nav.auth .nav-link {
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 17px;
+}
+.navbar-expand-md .navbar-nav.auth .nav-item:first-child {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.dropdown-menu {
+    padding: 0;
+    min-width: 8rem;
+}
+.dropdown-item {
+    padding: 0.5rem 0;
+    font-family: "Hiragino Kaku Gothic ProN";
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.dropdown-item:first-child:hover {
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+.dropdown-item:nth-child(2):hover {
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+.navbar-expand-md .navbar-nav .nav-item hr {
+    display: none;
+}
+.navbar-nav .dropdown-toggle::after {
+    content: none;
+}
+.sp {
+    display: none;
+}
+@media(max-width: 767px) {
+    .navbar {
+        padding: 0;
+    }
+    .navbar-light .navbar-brand {
+        margin-left: 3%;
+    }
+    .navbar-light .navbar-toggler {
+        margin-right: 3%;
+    }
+    .navbar-collapse {
+        width: 100%;
+        background-image: url('../img/nav-bg.jpg');
+        background-position: center;
+        z-index: 100;
+        filter: grayscale(80%);
+    }
+    .navbar-expand-md .navbar-nav {
+        margin-left: 0 !important;
+    }
+    .navbar-expand-md .navbar-nav .nav-item:first-child {
+        margin: 0;
+    }
+    .navbar-expand-md .navbar-nav .nav-item hr {
+        display: block;
+        border-top: 1px solid #fff;
+        margin: 0;
+        opacity: .4;
+    }
+    .navbar-light .navbar-nav.auth .nav-item:last-child {
+        border-bottom: none;
+    }
+    .navbar-expand-md .navbar-nav.auth .nav-item:first-child {
+        margin: 0;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        padding: 1.5em;
+        opacity: 1;
+        font-size: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .pc {
+        display: none;
+    }
+    .sp {
+        display: block;
+    }
+    .navbar-expand-md .navbar-nav.sp {
+        position: absolute;
+        right: 100px;
+    }
+    .navbar-expand-md .navbar-nav.sp .nav-item {
+        border: none;
+    }
+    .navbar-light .navbar-nav.sp .nav-link {
+        padding: 0;
+        color: #fce4e7;
+        font-size: 30px;
+    }
+    .navbar-light .navbar-nav.auth .nav-link {
+        font-size: 20px;
+    }
+    .navbar-nav .dropdown-item {
+        padding: 1em;
+    }
+    .navbar-light .navbar-nav.auth .nav-link.dropdown-toggle .fas {
+        margin-right: 8px;
+    }
+}
+
 .main-top {
     position: relative;
     display: flex;
