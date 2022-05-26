@@ -287,87 +287,133 @@ body {
 /* top-left */
 .top-left {
     position: relative;
-    width: 78%;
-    height: 79vh;
-    background-color: #355469;
-}
-.top-left nav {
-    position: absolute;
-    z-index: 10;
     width: 100%;
-    height: 100px;
-    margin: 0 auto;
-    font-family: "Hiragino Kaku Gothic ProN";
+    margin-left: 50px;
 }
-@media (max-width: 1500px) {
-    .top-left nav {
-        margin-left: 3%;
+@media (max-width: 660px) {
+    .top-left {
+        margin-left: 0;
     }
-}
-.item {
-    max-width: 1055px;
-    height: 105px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 auto;
-    list-style: none;
-}
-.item li a {
-    font-size: 17px;
-    color: #fce4e7;
-    text-decoration: none;
-    display: block;
-    transition: all 0.3s;
-}
-.item li:nth-child(2) a {
-    margin-left: 57px;
-}
-.item li:nth-child(3) a {
-    margin-left: 59px;
-}
-.item li:nth-child(4) a {
-    margin-left: 60px;
-}
-.item li a:hover {
-    opacity: 0.5;
 }
 .top-left::after {
     content: "";
     position: absolute;
-    top: 252px;
-    width: 555px;
+    top: 126px;
+    width: 38%;
     height: 1px;
     display: block;
     border-bottom: 1px solid #fce4e7;
 }
+@media (max-width: 660px) {
+    .top-left::after {
+        width: 35%;
+        top: 35px;
+    }
+}
 .top-left-text {
-    max-width: 900px;
-    margin: 210px auto;
+    padding-left: 10px;
+    margin: 80px auto 0;
     color: #fff;
 }
-@media (max-width: 1500px) {
+@media (max-width: 660px) {
     .top-left-text {
-        padding-left: 3%;
+        margin: 50px auto 0;
     }
 }
 .title {
-    margin-bottom: 51px;
+    margin-bottom: 33px;
     font-size: 25px;
     text-shadow: 5px 4px 3px rgba(0, 0, 0);
 }
+@media (max-width: 660px) {
+    .title {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+}
 h1 {
     font-family: "せのびレギュラー";
-    margin-bottom: 25px;
+    margin-bottom: 7px;
     margin-left: -11px;
     font-size: 55px;
     font-weight: normal;
     text-shadow: 5px 4px 3px rgba(0, 0, 0);
 }
+@media (max-width: 660px) {
+    h1 {
+        margin-bottom: 10px;
+        font-size: 45px;
+    }
+}
 h1 + p {
     font-family: "せのびレギュラー";
     font-size: 21px;
     text-shadow: 4px 3px 2px rgba(0, 0, 0);
+}
+
+/* top-right */
+@media (max-width: 660px) {
+    .top-right {
+        margin-top: 173px;
+    }
+}
+.top-right-text {
+    width: 264px;
+    margin: 229px auto 45px;
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.55;
+}
+@media (max-width: 1030px) {
+    .top-right-text {
+        margin-top: 200px;
+    }
+}
+@media (max-width: 660px) {
+    .top-right-text {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+}
+.top-right-text p {
+    padding-left: 55px;
+    text-shadow: 4px 3px 2px rgba(0, 0, 0);
+}
+@media (max-width: 660px) {
+    .top-right-text p {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+.top-right-btn ul {
+    text-align: center;
+    list-style: none;
+}
+.top-right-btn ul > li {
+    margin-bottom: 20px;
+}
+.top-right-btn a {
+    display: inline-block;
+    width: 155px;
+    height: 40px;
+    color: #fff;
+    background: #355469;
+    font-family: "ヒラギノ丸ゴ ProN";
+    font-size: 17px;
+    text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.69);
+    line-height: 40px;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.16) inset;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+.top-right-btn a:hover {
+    opacity: 0.6;
+}
+@media (max-width: 660px) {
+    .top-right-btn a {
+        width: 80%;
+    }
 }
 /* top-right */
 .top-right {
