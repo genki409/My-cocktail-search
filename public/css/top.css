@@ -211,15 +211,78 @@ body {
     }
 }
 
-.main-top {
+.main-top-bg {
+    width: 100%;
+    height: 79vh;
+    background: linear-gradient(90deg, #355469 74%, #baa68b 0%, #baa68b 100%);
+}
+@media (max-width: 1030px) {
+    .main-top-bg {
+        height: 600px;
+    }
+}
+@media (max-width: 880px) {
+    .main-top-bg {
+        background: linear-gradient(90deg, #355469 70%, #baa68b 0%, #baa68b 100%);
+    }
+}
+@media (max-width: 760px) {
+    .main-top-bg {
+        background: linear-gradient(90deg, #355469 65%, #baa68b 0%, #baa68b 100%);
+    }
+}
+@media (max-width: 660px) {
+    .main-top-bg {
+        height: 650px;
+        background: linear-gradient(180deg, #355469 65%, #baa68b 0%, #baa68b 100%);
+    }
+}
+.main-top-container {
     position: relative;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.top-container {
     display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 660px) {
+    .top-container {
+        display: block;
+        margin: 0 3%;
+    }
 }
 .main-top::after {
     content: url(../img/top_man.png);
     position: absolute;
-    top: 492px;
+    top: 56vh;
     left: 23px;
+}
+@media (max-width: 1250px) {
+    .main-top::after {
+        content: url(../img/top_man-1250.png);
+    }
+}
+@media (max-width: 1030px) {
+    .main-top::after {
+        content: url(../img/top_man-1050.png);
+        top: 450px;
+        left: 60px;
+    }
+}
+@media (max-width: 880px) {
+    .main-top::after {
+        content: url(../img/top_man-800.png);
+        top: 500px;
+        left: 30px;
+    }
+}
+@media (max-width: 660px) {
+    .main-top::after {
+        content: url(../img/top_man-300.png);
+        width: 300px;
+        top: 290px;
+    }
 }
 /* top-left */
 .top-left {
