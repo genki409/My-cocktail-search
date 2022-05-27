@@ -917,12 +917,8 @@ h1 + p {
     z-index: 10;
     width: 100%;
     height: 100px;
-    background: linear-gradient(
-        #00577c 0%,
-        #004562 0%,
-        #003f59 0%,
-        #002c3e 100%
-    );
+    padding: 0 5%;
+    background: linear-gradient(#00577c 0%,#004562 0%,#003f59 0%,#002c3e 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -941,4 +937,9 @@ h1 + p {
     font-family: "Hiragino Kaku Gothic ProN";
     font-size: 15px;
     font-weight: bold;
+}
+@media (max-width: 599px) {
+    .footer p {
+        font-size: 10px;
+    }
 }
