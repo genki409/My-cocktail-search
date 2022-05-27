@@ -521,6 +521,11 @@ h1 + p {
     bottom: 0;
     overflow: hidden;
 }
+@media (max-width: 599px) {
+    #video-area {
+        display: none;
+    }
+}
 #video {
     position: absolute;
     z-index: -1;
