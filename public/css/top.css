@@ -415,36 +415,7 @@ h1 + p {
         width: 80%;
     }
 }
-/* top-right */
-.top-right {
-    width: 28%;
-    height: 79vh;
-    background: linear-gradient(#baa68b 0%, #5d5346 100%);
-}
-.top-right-text {
-    width: 264px;
-    margin: 366px auto 50px;
-    font-size: 26px;
-    color: #fff;
-    line-height: 1.55;
-}
-.top-right-text p {
-    padding-left: 48px;
-    text-shadow: 4px 3px 2px rgba(0, 0, 0);
-}
-.top-right-btn ul {
-    text-align: center;
-}
-.top-right-btn ul > li {
-    margin-bottom: 20px;
-}
-.top-right-btn a {
-    display: inline-block;
-    transition: all 0.5s;
-}
-.top-right-btn a:hover {
-    opacity: 0.6;
-}
+
 
 /* --------------------------------
           main-bottom
@@ -455,11 +426,19 @@ h1 + p {
     height: 45vh;
     position: relative;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 1030px) {
     #bottom-header {
-        height: 90vh;
+        height:  300px;
     }
 }
+@media (max-width: 599px) {
+    #bottom-header {
+        height:  300px;
+        background-image: url('../img/top_cocktail-sp.png');
+        background-position: center;
+    }
+}
+
 /* scrolldown */
 .scrolldown {
     position: absolute;
@@ -474,6 +453,12 @@ h1 + p {
     color: #eee;
     font-size: 18px;
     letter-spacing: 0.05em;
+}
+@media (max-width: 599px) {
+    .scrolldown span {
+        /* top: -30px; */
+        top: 20px;
+    }
 }
 .scrolldown::after {
     content: "";
@@ -500,6 +485,29 @@ h1 + p {
         height: 0;
         top: 50px;
         opacity: 0;
+    }
+}
+@media (max-width: 599px) {
+    @keyframes pathmove {
+        0% {
+            height: 0;
+            /* top: -10px; */
+            top: 44px;
+            opacity: 0;
+        }
+
+        30% {
+            /* height: 30px; */
+            height: 44px;
+            opacity: 1;
+        }
+
+        100% {
+            height: 0;
+            /* top: 20px; */
+            top: 50px;
+            opacity: 0;
+        }
     }
 }
 
