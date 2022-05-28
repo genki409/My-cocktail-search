@@ -71,12 +71,29 @@ body {
     height: 100px;
     display: flex;
 }
+@media (max-width: 500px) {
+    .navbar .container {
+        flex-direction: column;
+        height: 150px;
+    }
+}
 #navbarSupportedContent {
     display: flex;
     align-items: center;
 }
+@media (max-width: 500px) {
+    #navbarSupportedContent {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
 .navbar-nav {
     display: flex;
+}
+@media (max-width: 500px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
 }
 .navbar-expand-md {
     height: 100px;
@@ -114,6 +131,11 @@ body {
     font-size: 25px;
     text-shadow: 3px 3px 3px black;
 }
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 15px;
+    }
+}
 .navbar-light .navbar-nav .nav-link {
     font-family: "Hiragino Kaku Gothic ProN";
     font-size: 17px;
@@ -124,10 +146,20 @@ body {
 .navbar-expand-md .navbar-nav .nav-item {
     margin-right: 20px;
 }
+@media (max-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-item {
+        margin-right: 0;
+    }
+}
 .navbar-light .navbar-nav.auth .nav-link {
     font-family: "Hiragino Kaku Gothic ProN";
     font-size: 17px;
 }
+/* @media (max-width: 768px) {
+    .navbar-light .navbar-nav.auth .nav-link {
+        font-size: 13px;
+    }
+} */
 .navbar-expand-md .navbar-nav.auth .nav-item:first-child {
     margin-left: 0;
     margin-right: 10px;
@@ -195,7 +227,9 @@ body {
     .navbar-light .navbar-nav .nav-link {
         padding: 1.5em;
         opacity: 1;
-        font-size: 20px;
+        font-size: 13px;
+        text-decoration: none;
+
     }
 }
 @media (max-width: 767px) {
@@ -218,7 +252,8 @@ body {
         font-size: 30px;
     }
     .navbar-light .navbar-nav.auth .nav-link {
-        font-size: 20px;
+        font-size: 13px;
+        padding: 15px;
     }
     .navbar-nav .dropdown-item {
         padding: 1em;
@@ -228,6 +263,11 @@ body {
     }
 }
 
+@media (max-width: 500px) {
+    .navbar-light .navbar-nav.auth .nav-link {
+        margin-bottom: 10px;
+    }
+}
 /* main-top */
 
 .main-top-bg {
