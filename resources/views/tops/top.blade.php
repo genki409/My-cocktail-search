@@ -56,7 +56,6 @@
                                 aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <!-- Left Side Of Navbar -->
                                 <ul class="navbar-nav mr-auto">
@@ -75,16 +74,16 @@
                                 <!-- Right Side Of Navbar -->
                                 <ul class="navbar-nav ml-2 auth">
                                     <!-- Authentication Links -->
-                                                                                <li class="nav-item">
+                                       <li class="nav-item">
                                             <a class="nav-link" href="https://sho-free.com/login">ログイン</a>
                                             <hr>
                                         </li>
-                                                                                        <li class="nav-item">
-                                                <a class="nav-link"
+                                        <li class="nav-item">
+                                            <a class="nav-link"
                                                     href="https://sho-free.com/register">新規登録</a>
-                                                <hr>
-                                            </li>
-                                                                                                                    </ul>
+                                            <hr>
+                                        </li>    
+                                </ul>
                             </div>
                         </div>
                     </nav>
