@@ -66,6 +66,90 @@ body {
 /* .navbar {
     margin-top: 20px;
 } */
+.top-left {
+    position: relative;
+    /* width: 78%; */
+    height: 79vh;
+    background-color: #355469;
+}
+.top-left nav {
+    position: absolute;
+    z-index: 10;
+    /* width: 100%; */
+    height: 100px;
+    margin: 0 auto;
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+@media (max-width: 1500px) {
+    .top-left nav {
+        margin-left: 3%;
+    }
+}
+.item {
+    max-width: 1055px;
+    height: 105px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    list-style: none;
+}
+.item li a {
+    font-size: 17px;
+    color: #fce4e7;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+}
+.item li:nth-child(2) a {
+    margin-left: 57px;
+}
+.item li:nth-child(3) a {
+    margin-left: 59px;
+}
+.item li:nth-child(4) a {
+    margin-left: 60px;
+}
+.item li a:hover {
+    opacity: 0.5;
+}
+.top-left::after {
+    content: "";
+    position: absolute;
+    top: 252px;
+    width: 555px;
+    height: 1px;
+    display: block;
+    border-bottom: 1px solid #fce4e7;
+}
+.top-left-text {
+    max-width: 900px;
+    margin: 210px auto;
+    color: #fff;
+}
+@media (max-width: 1500px) {
+    .top-left-text {
+        padding-left: 3%;
+    }
+}
+.title {
+    margin-bottom: 51px;
+    font-size: 25px;
+    text-shadow: 5px 4px 3px rgba(0, 0, 0);
+}
+h1 {
+    font-family: "せのびレギュラー";
+    margin-bottom: 25px;
+    margin-left: -11px;
+    font-size: 55px;
+    font-weight: normal;
+    text-shadow: 5px 4px 3px rgba(0, 0, 0);
+}
+h1 + p {
+    font-family: "せのびレギュラー";
+    font-size: 21px;
+    text-shadow: 4px 3px 2px rgba(0, 0, 0);
+}
 .navbar .container {
     max-width: 1320px;
     height: 100px;
@@ -298,7 +382,7 @@ body {
 }
 .main-top-container {
     position: relative;
-    max-width: 1320px;
+    /* max-width: 1320px; */
     margin: 0 auto;
 }
 .top-container {
@@ -343,8 +427,8 @@ body {
         top: 290px;
     }
 }
-/* top-left */
-.top-left {
+/* top-container-left */
+.top-container-left {
     position: relative;
     width: 100%;
     margin-left: 50px;
@@ -411,6 +495,11 @@ h1 + p {
 }
 
 /* top-right */
+.top-right {
+    position: absolute;
+    right: 30px;
+}
+
 @media (max-width: 660px) {
     .top-right {
         margin-top: 173px;
@@ -456,13 +545,13 @@ h1 + p {
     display: inline-block;
     width: 155px;
     height: 40px;
-    color: #fff;
-    background: #355469;
+    color: #355469;
+    background: #fff;
     font-family: "ヒラギノ丸ゴ ProN";
     font-size: 17px;
-    text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.69);
+    /* text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.69); */
     line-height: 40px;
-    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.16) inset;
+    box-shadow: 6px 6px 5px rgba(141, 138, 138, 0.16) inset;
     transition: all 0.5s;
     text-decoration: none;
 }
