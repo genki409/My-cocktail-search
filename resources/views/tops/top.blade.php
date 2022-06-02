@@ -40,9 +40,7 @@
 
     <main>
         <div id="container">
-    <div class="main-top">
-        {{-- <div class="main-top-bg"> --}}
-            <div class="main-top-container">
+            <div class="main-top">
                 <div class="top-left">
                     <nav>
                         <ul class="item">
@@ -69,93 +67,88 @@
 
                         </ul>
                     </nav>
-                    <div class="top-container">
-                        <div class="top-container-left">
-                            <div class="top-left-text">
-                                <p class="title">心をお酒に。</p>
-                                <h1>ここ酒</h1>
-                                <p>いまの気分でお酒を探す場所</p>
-                            </div><!-- /.top-left-text -->
-                        </div><!-- /.top-left-->
 
-                        <div class="top-right">
-                            <div class="top-right-text">
-                                <p>
-                                    あの日の味を<br>
-                                    思い出す場所に。
-                                </p>
-                            </div><!-- /.section-right-text -->
-                            <div class="top-right-btn">
-                                <ul>
-                                    <li>
-                                        <a class="cocktail-serach" href="{{ route('records.index') }}">お酒を探す</a>
-                                    </li>
-                                    <li>
-                                        <a class="cocktail-memo" href="{{ route('records.index') }}">お酒を共有する</a>
-                                    </li>
-                                </ul>
-                            </div><!-- /.top-right-btn -->
-                        </div><!-- /.top-right -->
-                    </div><!-- /.top-container -->
-                </div><!-- /.main-top-container -->
-            </div><!-- /.main-top-bg -->
-        </div><!-- /.main-top -->
+                    <div class="top-left-text">
+                        <p class="title">心をお酒に。</p>
+                        <h1>ここ酒</h1>
+                        <p>いまの気分でお酒を探す場所</p>
+                    </div><!-- /.top-left-text -->
+                </div><!-- /.top-left-->
+                <div class="top-right">
+                    <div class="top-right-text">
+                        <p>
+                            あの日の味を<br>
+                            思い出す場所に。
+                        </p>
+                    </div><!-- /.section-right-text -->
+                    <div class="top-right-btn">
+                        <ul>
+                            <li>
+                                <a class="cocktail-serach" href="search"><img src="img/top_button1.jpg" alt="お酒を探す"></a>
+                            </li>
+                            <li>
+                                <a class="cocktail-memo" href="{{ route('records.index') }}"><img
+                                        src="img/top_button2.jpg" alt="お酒を探す"></a>
+                            </li>
+                        </ul>
+                    </div><!-- /.top-right-btn -->
+                </div><!-- /.top-right -->
+            </div><!-- /.main-top -->
 
-        <div class="main-bottom">
-            <div id="bottom-header">
-                <div class="scrolldown"><span>Scroll</span></div>
-            </div><!-- /#bottom-header -->
-            <div id="video-area">
-                <video id="video" poster="img/top_cocktail.png" webkit-playsinline playsinline muted autoplay loop>
-                    <source src="img/top_whiskey.mp4" type="video/mp4">
-                </video>
-            </div><!-- /video-area -->
-            <div id="bottom-container">
-                <div class="bottom-tp">
-                    <div class="bottom-tp-left">
-                        <p>
-                            お酒に詳しくない<br>
-                            気分で決めたい<br>
-                            思い出したい<br>
-                            共有したい
-                        </p>
-                        <p>
-                            あなたのお酒と出会える場所に
-                        </p>
-                    </div><!-- /.bottom-tp-left -->
-                    <div class="bottom-tp-right">
-                        <img src="img/top_relax.png" alt="サンプルイメージ">
-                    </div><!-- /.bottom-tp-right -->
-                </div><!-- /.bottom-tp -->
-                <div class="bottom-bt">
-                    <div class="bottom-bt-contents">
-                        <img src="img/top_bt-image.png" alt="今日は何のむ?">
-                        <div class="bt-contents-search">
-                            <p>お酒を探す？ <a href="search">▶︎ Click</a></p>
-                        </div>
-                        <div class="bt-contents-memory">
-                            <p>みんなは何をのんでる？ <a href="{{ route('records.index') }}">▶︎ Click</a></p>
-                        </div>
-                        <div class="bt-contents-memo">
-                            <p>お酒を共有する <a href="{{ route('records.index') }}">▶︎ Click</a></p>
-                        </div>
-                    </div><!-- /.bottom-bt-contents -->
-                </div><!-- /.bottom-bt -->
-            </div><!-- /#bottom-container -->
-        </div><!-- /.main-bottom -->
-    </div><!-- /.container -->
+            <div class="main-bottom">
+                <div id="bottom-header">
+                    <div class="scrolldown"><span>Scroll</span></div>
+                </div><!-- /#bottom-header -->
+                <div id="video-area">
+                    <video id="video" poster="img/top_cocktail.png" webkit-playsinline playsinline muted autoplay loop>
+                        <source src="img/top_whiskey.mp4" type="video/mp4">
+                    </video>
+                </div><!-- /video-area -->
+                <div id="bottom-container">
+                    <div class="bottom-tp">
+                        <div class="bottom-tp-left">
+                            <p>
+                                お酒に詳しくない<br>
+                                気分で決めたい<br>
+                                思い出したい<br>
+                                記録したい
+                            </p>
+                            <p>
+                                あなたのお酒と出会える場所に
+                            </p>
+                        </div><!-- /.bottom-tp-left -->
+                        <div class="bottom-tp-right">
+                            <img src="img/top_relax.png" alt="サンプルイメージ">
+                        </div><!-- /.bottom-tp-right -->
+                    </div><!-- /.bottom-tp -->
+                    <div class="bottom-bt">
+                        <div class="bottom-bt-contents">
+                            <img src="img/top_bt-image.png" alt="今日は何のむ?">
+                            <div class="bt-contents-search">
+                                <p>お酒を探す？ <a href="search">▶︎ Click</a></p>
+                            </div>
+                            <div class="bt-contents-memory">
+                                <p>あの日のお酒は… <a href="{{ route('records.index') }}">▶︎ Click</a></p>
+                            </div>
+                            <div class="bt-contents-memo">
+                                <p>思い出を残す <a href="{{ route('records.index') }}">▶︎ Click</a></p>
+                            </div>
+                        </div><!-- /.bottom-bt-contents -->
+                    </div><!-- /.bottom-bt -->
+                </div><!-- /#bottom-container -->
+            </div><!-- /.main-bottom -->
+        </div><!-- /.container -->
     </main>
 
-<footer class="footer">
-    <h3>ここ酒</h3>
-    <p>copyright &copy; 2022 the sho koh All Rights Reserved</p>
-</footer>
-<!--==============JQuery読み込み===============-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://sho-free.com/js/app.js" defer></script>
-<script src="https://sho-free.com/js/top.js"></script>
+    <footer class="footer">
+        <h3>ここ酒</h3>
+        <p>copyright &copy; 2022 the 5th class All Rights Reserved</p>
+    </footer>
+    <!--==============JQuery読み込み===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/top.js"></script>
 </body>
 
 </html>
