@@ -84,11 +84,10 @@
                     <div class="top-right-btn">
                         <ul>
                             <li>
-                                <a class="cocktail-serach" href="search"><img src="img/top_button1.jpg" alt="お酒を探す"></a>
+                                <a class="cocktail-serach" href="search">お酒を探す</a>
                             </li>
                             <li>
-                                <a class="cocktail-memo" href="{{ route('records.index') }}"><img
-                                        src="img/top_button2.jpg" alt="お酒を探す"></a>
+                                <a class="cocktail-memo" href="{{ route('records.index') }}">お酒を記録する</a>
                             </li>
                         </ul>
                     </div><!-- /.top-right-btn -->
