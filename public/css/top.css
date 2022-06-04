@@ -159,6 +159,19 @@ body {
     display: block;
     transition: all 0.3s;
 }
+@media (max-width: 880px){
+    .item li a {
+        font-size: 14px;
+}
+}
+@media (max-width: 660px){
+    .item li a {
+        font-size: 13px;
+}
+}
+.item li:nth-child(1) a {
+    margin-left: 20px;
+}
 .item li:nth-child(2) a {
     margin-left: 57px;
 }
@@ -167,6 +180,11 @@ body {
 }
 .item li:nth-child(4) a {
     margin-left: 60px;
+}
+@media (max-width: 400px){
+    .item li:nth-child(2) a, .item li:nth-child(3) a, .item li:nth-child(4) a {
+        margin-left: 20px;
+}
 }
 .item li a:hover {
     opacity: 0.5;
