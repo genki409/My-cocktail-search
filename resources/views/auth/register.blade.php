@@ -27,11 +27,11 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="age" class="col-md-4 col-form-label text-md-right">{{ __('年齢') }}</label>
+                                <label for="age" class="col-md-4 col-form-label text-md-right">{{ __('年齢（半角数字のみ）') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="age" type="number" class="form-control @error('age') is-invalid @enderror"
-                                        name="age" value="{{ old('age') }}" required autocomplete="age">
+                                        name="age" value="{{ old('age') }}" required autocomplete="age" >
 
                                     @error('age')
                                         <span class="invalid-feedback" role="alert">
@@ -63,7 +63,7 @@
                                 <div class="col-md-6">
                                     <input id="password" type="password"
                                         class="form-control @error('password') is-invalid @enderror" name="password"
-                                        required autocomplete="new-password" placeholder="6文字以上の半角英数">
+                                        required autocomplete="new-password" placeholder="8文字以上の半角英数">
 
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">
@@ -80,7 +80,7 @@
                                 <div class="col-md-6">
                                     <input id="password-confirm" type="password" class="form-control"
                                         name="password_confirmation" required autocomplete="new-password"
-                                        placeholder="6文字以上の半角英数">
+                                        placeholder="8文字以上の半角英数">
                                 </div>
                             </div>
 
