@@ -13,19 +13,19 @@
 @section('content')
     {{-- <div class="container"> --}}
         <section class="body">
+            <img src="/img/search-pic1.png" alt="文字装飾" class="font-img">
             <form method="get" action="{{ route('searches.index') }}">
-                <div class="search">
-                    <div class="serchin">
-                        <img src="/img/search-pic1.png" alt="文字装飾" class="pic1">
+                <div class="search-container">
+                    <div class="search">
                         <div class="content">
-                            <div class="one">
+                            <div class="free-word">
                                 <label for="word">フリーワード</label>
                                 <input class="free" type="text" id="word" name="word" minlength="1"
                                     maxlength="50" size="41" placeholder="マティーニ ライム シンプル etc…">
                             </div>
                         </div>
 
-                        <div class="two">
+                        <div class="choice-area">
                             <div class="content">
                                 <label for="base_id">お酒のベース</label>
                                 <div class="select-wrap">
@@ -80,12 +80,12 @@
                                         </select>
                                 </div>
                             </div>
-                            <img src="/img/search-pic2.png" alt="カクテルの画像" class="pic2">
                         </div>
-                        <button class="button" href="#"><img src="/img/search-button.png" alt="検索ボタン"></button>
+                        <button class="search-btn" href="#">お酒を探す</button>
                     </div>
                 </div>
             </form>
+            <img src="/img/search-pic2.png" alt="カクテルの画像" class="bottom-right-img">
         </section>
     {{-- </div> --}}
     @yield('search')
