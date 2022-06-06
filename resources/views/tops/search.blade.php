@@ -81,7 +81,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="search-btn" href="#"><img src="/img/search-button.png" alt="検索ボタン"></button>
+                        <button class="search-btn" href="#">お酒を探す</button>
                     </div>
                 </div>
             </form>

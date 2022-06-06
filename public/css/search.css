@@ -37,14 +37,19 @@ body {
 }
 @media (max-width: 1150px){
     .font-img{
+        width: 250px;
 }
 }
 @media (max-width: 880px){
     .font-img{
+        width: 200px;
+        top: -50px;
 }
 }
 @media (max-width: 660px){
     .font-img{
+        width: 150px;
+        top: -60px;
 }
 }
 
@@ -60,24 +65,34 @@ body {
         right: 50px;
 }
 }
-/* @media (max-width: 1150px){
+@media (max-width: 1150px){
     .bottom-right-img{
-        bottom: -160px;
-        right: -250px;
+        height: 250px;
+        bottom: -60px;
+        right: 150px;
 }
-} */
-/* @media (max-width: 880px){
+}
+@media (max-width: 880px){
     .bottom-right-img{
-        bottom: -160px;
-        right: -250px;
+        height: 200px;
+        bottom: -80px;
+        right: 100px;
 }
-} */
-/* @media (max-width: 660px){
+}
+@media (max-width: 660px){
     .bottom-right-img{
-        bottom: -160px;
-        right: -250px;
+        height: 150px;
+        bottom: -40px;
+        right: 50px;
 }
-} */
+}
+@media (max-width: 500px){
+    .bottom-right-img{
+        height: 80px;
+        bottom: 0px;
+        right: 50px;
+}
+}
 
 .body {
     font-family: "せのびレギュラー";
@@ -88,7 +103,16 @@ body {
     width: 100%;
     margin: 142px 0;
 }
-
+@media (max-width: 880px){
+    .body{
+        margin: 100px 0;
+}
+}
+@media (max-width: 660px){
+    .body{
+        margin: 0 0 50px 0;
+}
+}
 form {
     width: 1448px;
     margin: 0 150px;
@@ -101,6 +125,11 @@ form {
 @media (max-width: 660px){
     form{
         margin: 0 50px;
+}
+}
+@media (max-width: 460px){
+    form{
+        margin: 0 20px;
 }
 }
 
@@ -146,6 +175,16 @@ label {
     font-family: "せのびレギュラー";
     font-size: 20px;
 }
+@media (max-width: 880px){
+    label{
+        font-size: 15px;
+}
+}
+@media (max-width: 660px){
+    label{
+        font-size: 13px;
+}
+}
 
 input.free {
     font-size: 18px;
@@ -164,6 +203,16 @@ input.free {
 @media (max-width: 660px){
     input.free{
         font-size: 13px;
+}
+}
+@media (max-width: 460px){
+    input.free{
+        font-size: 12px;
+}
+}
+@media (max-width: 390px){
+    input.free{
+        font-size: 10px;
 }
 }
 
@@ -219,8 +268,9 @@ input.base option {
 
 }
 }
-@media (max-width: 660px){
+@media (max-width: 460px){
     .choice-area{
+        width: 280px;
 }
 }
 .free {
@@ -306,15 +356,24 @@ select {
 }
 @media (max-width: 660px){
     select{
+        font-size: 8px;
 }
 }
 .search-btn {
     padding: 0;
     display: inline;
-    width: 255px;
+    width: 155px;
+    height: 35px;
+    border-radius: 5px;
     margin: 0 auto;
     background-color: inherit;
-    border: 0;
+    border: none;
+    font-family: "ヒラギノ丸ゴ ProN";
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(#baa68b 0%, #5d5346 100%);
+    text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.69);
+    transition: all 0.5s;
 }
 
 .search-btn:hover {
