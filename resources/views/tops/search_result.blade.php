@@ -23,42 +23,7 @@
     @extends('layouts.layouts')
     @section('content')
         <main class="main">
-            <div class="pagination pagination-top">
-                <div class="pagination-inner">
-                    <div class="pagination-page">
-                        <strong>
-                            <span>1</span>
-                        </strong>
-                        <a href="#">
-                            <span>2</span>
-                        </a>
-                        <a href="#">
-                            <span>3</span>
-                        </a>
-                        <a href="#">
-                            <span>4</span>
-                        </a>
-                        <a href="#">
-                            <span>5</span>
-                        </a>
-                        <span class="pagination-omission">…</span>
-                    </div><!-- /.pagination_page -->
-                    <div class="pagination-next">
-                        <a href="#">
-                            <span>次</span>
-                            <i class="fas fa-angle-right"></i>
-                        </a>
-                    </div><!-- /.pagination_next-->
-                    <div class="pagination-last">
-                        <a href="#">
-                            <span>最後</span>
-                            <i class="fas fa-angle-double-right"></i>
-                        </a>
-                    </div><!-- /.pagination_last -->
-                </div><!-- /.pagination-inner -->
-            </div><!-- /.pagination-top -->
             <div class="main-middle">
-
                 <div class="cards">
                     <div class="row">
                         @foreach ($posts as $post)
@@ -75,42 +40,6 @@
                     </div><!-- /.row -->
                 </div><!-- /.cards -->
             </div>
-
-            <div class="pagination pagination-bottom">
-                <div class="pagination-inner">
-                    <div class="pagination-page">
-                        <strong>
-                            <span>1</span>
-                        </strong>
-                        <a href="#">
-                            <span>2</span>
-                        </a>
-                        <a href="#">
-                            <span>3</span>
-                        </a>
-                        <a href="#">
-                            <span>4</span>
-                        </a>
-                        <a href="#">
-                            <span>5</span>
-                        </a>
-                        <span class="pagination-omission">…</span>
-                    </div><!-- /.pagination_page -->
-                    <div class="pagination-next">
-                        <a href="#">
-                            <span>次</span>
-                            <i class="fas fa-angle-right"></i>
-                        </a>
-                    </div><!-- /.pagination_next-->
-                    <div class="pagination-last">
-                        <a href="#">
-                            <span>最後</span>
-                            <i class="fas fa-angle-double-right"></i>
-                        </a>
-                    </div><!-- /.pagination_last -->
-                </div><!-- /.pagination-inner -->
-            </div><!-- /.pagination-bottom -->
-
             <!-- ページトップボタン -->
             <div class="main-bottom">
                 <a href="#page-top"><img class="top-btn-img" src="img/top.png" alt=""></a>
