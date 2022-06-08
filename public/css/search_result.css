@@ -122,36 +122,28 @@ html {
 .row a:nth-child(n + 4) {
     margin-top: 75px;
 }
-.card {
+.row .card {
     position: relative;
-    height: 455px;
+    height: 350px;
     border: none !important;
     border-radius: 49px !important;
+    display: flex;
+    flex-direction: column;
+
 }
 .card:hover {
     transform: scale(1.02);
     transition-duration: 0.5s;
 }
-.card-img {
-    height: 100%;
-    background-size: cover;
-    border-radius: 38px !important;
-}
-@media (max-width: 760px) {
-    .card-img {
-        height: auto;
-        max-height: 700px;
-    }
-}
 .card-body {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    top: 0;
     height: 130px;
     width: 100%;
     padding: 0;
     text-align: center;
-    background: rgba(255, 255, 255, 0.69);
-    border-radius: 0px 0px 38px 38px;
+    background: #baa68b;
+    border-radius:38px 38px 0 0;
 }
 
 .japanese {
@@ -170,12 +162,31 @@ html {
     color: #000;
     font-family: "せのびゴシック";
 }
-
-/* --------------------------------
-        .pagination-bottom
--------------------------------- */
-.pagination-bottom {
-    margin-bottom: 100px;
+.card-date {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    height: 250px;
+}
+.card-base, .card-taste, .card-alc {
+    display: flex;
+    justify-content: center;
+}
+.card-date h5 {
+    height: 30px;
+    width: 60px;
+    background-color: bisque;
+    color: black;
+    padding: 5px;
+    text-align: center;
+}
+.base-date, .taste-date, .alc-date {
+    font-size: 10px;
+    color: black;
+    padding: 5px;
 }
 
 /* ページトップボタン */

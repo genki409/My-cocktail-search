@@ -27,13 +27,26 @@
                 <div class="cards">
                     <div class="row">
                         @foreach ($posts as $post)
-                            <a href="{{ route('searches.show', $post['cocktail_id']) }}/#nav" class="col-lg-4 col-md-6">
+                            <a href="{{ route('searches.show', $post['cocktail_id']) }}/#nav" class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="card">
-                                    <img src="img/Sample-img.jpg" alt="" class="card-img">
                                     <div class="card-body">
                                         <h2 class="japanese">{{ $post['cocktail_name'] }}</h2>
                                         <h4 class="english">{{ $post['cocktail_name_english'] }}</h4>
                                     </div><!-- /.card-body -->
+                                    <div class="card-date">
+                                        <div class="card-base">
+                                            <h5>Base</h5>
+                                            <div class="base-date">{{ $post['base_name'] }}</div>
+                                        </div>
+                                        <div class="card-taste">
+                                            <h5>Taste</h5>
+                                            <div class="taste-date">{{ $post['taste_name'] }}</div>
+                                        </div>
+                                        <div class="card-alc">
+                                            <h5>Alc.</h5>
+                                            <div class="alc-date">{{ $post['alcohol'] }}%</div>
+                                        </div>
+                                    </div>
                                 </div><!-- /.card -->
                             </a>
                         @endforeach
