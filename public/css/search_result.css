@@ -189,6 +189,12 @@ html {
     padding: 5px;
 }
 
+.cocktail-img .cocktail-search2 {
+    width: 60px;
+    margin-left: 50px;
+    /* border-radius: 20px; */
+}
+
 /* ページトップボタン */
 
 .main-bottom {

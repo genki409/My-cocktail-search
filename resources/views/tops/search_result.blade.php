@@ -47,6 +47,9 @@
                                             <div class="alc-date">{{ $post['alcohol'] }}%</div>
                                         </div>
                                     </div>
+                                    <div class="cocktail-img">
+                                        <img class="cocktail-search2" src="/img/cocktail-search2.jpeg" alt="">
+                                    </div>
                                 </div><!-- /.card -->
                             </a>
                         @endforeach
