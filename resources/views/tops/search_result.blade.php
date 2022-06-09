@@ -23,94 +23,42 @@
     @extends('layouts.layouts')
     @section('content')
         <main class="main">
-            <div class="pagination pagination-top">
-                <div class="pagination-inner">
-                    <div class="pagination-page">
-                        <strong>
-                            <span>1</span>
-                        </strong>
-                        <a href="#">
-                            <span>2</span>
-                        </a>
-                        <a href="#">
-                            <span>3</span>
-                        </a>
-                        <a href="#">
-                            <span>4</span>
-                        </a>
-                        <a href="#">
-                            <span>5</span>
-                        </a>
-                        <span class="pagination-omission">…</span>
-                    </div><!-- /.pagination_page -->
-                    <div class="pagination-next">
-                        <a href="#">
-                            <span>次</span>
-                            <i class="fas fa-angle-right"></i>
-                        </a>
-                    </div><!-- /.pagination_next-->
-                    <div class="pagination-last">
-                        <a href="#">
-                            <span>最後</span>
-                            <i class="fas fa-angle-double-right"></i>
-                        </a>
-                    </div><!-- /.pagination_last -->
-                </div><!-- /.pagination-inner -->
-            </div><!-- /.pagination-top -->
+            <div class="main-top">
+                <h1>〜検索結果〜</h1>
+            </div>
             <div class="main-middle">
-
                 <div class="cards">
                     <div class="row">
                         @foreach ($posts as $post)
-                            <a href="{{ route('searches.show', $post['cocktail_id']) }}/#nav" class="col-lg-4 col-md-6">
+                            <a href="{{ route('searches.show', $post['cocktail_id']) }}/#nav" class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="card">
-                                    <img src="img/Sample-img.jpg" alt="" class="card-img">
                                     <div class="card-body">
                                         <h2 class="japanese">{{ $post['cocktail_name'] }}</h2>
                                         <h4 class="english">{{ $post['cocktail_name_english'] }}</h4>
                                     </div><!-- /.card-body -->
+                                    <div class="card-date">
+                                        <div class="card-base">
+                                            <h5>Base</h5>
+                                            <div class="base-date">{{ $post['base_name'] }}</div>
+                                        </div>
+                                        <div class="card-taste">
+                                            <h5>Taste</h5>
+                                            <div class="taste-date">{{ $post['taste_name'] }}</div>
+                                        </div>
+                                        <div class="card-alc">
+                                            <h5>Alc.</h5>
+                                            <div class="alc-date">{{ $post['alcohol'] }}%</div>
+                                        </div>
+                                    </div>
+                                    <div class="cocktail-img">
+                                        <img class="cocktail-search2" src="/img/cocktail-search2.jpeg" alt="">
+                                    </div>
                                 </div><!-- /.card -->
                             </a>
                         @endforeach
                     </div><!-- /.row -->
                 </div><!-- /.cards -->
             </div>
-
-            <div class="pagination pagination-bottom">
-                <div class="pagination-inner">
-                    <div class="pagination-page">
-                        <strong>
-                            <span>1</span>
-                        </strong>
-                        <a href="#">
-                            <span>2</span>
-                        </a>
-                        <a href="#">
-                            <span>3</span>
-                        </a>
-                        <a href="#">
-                            <span>4</span>
-                        </a>
-                        <a href="#">
-                            <span>5</span>
-                        </a>
-                        <span class="pagination-omission">…</span>
-                    </div><!-- /.pagination_page -->
-                    <div class="pagination-next">
-                        <a href="#">
-                            <span>次</span>
-                            <i class="fas fa-angle-right"></i>
-                        </a>
-                    </div><!-- /.pagination_next-->
-                    <div class="pagination-last">
-                        <a href="#">
-                            <span>最後</span>
-                            <i class="fas fa-angle-double-right"></i>
-                        </a>
-                    </div><!-- /.pagination_last -->
-                </div><!-- /.pagination-inner -->
-            </div><!-- /.pagination-bottom -->
-
             <!-- ページトップボタン -->
             <div class="main-bottom">
                 <a href="#page-top"><img class="top-btn-img" src="img/top.png" alt=""></a>
