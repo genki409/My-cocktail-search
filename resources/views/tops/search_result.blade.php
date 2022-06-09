@@ -23,6 +23,9 @@
     @extends('layouts.layouts')
     @section('content')
         <main class="main">
+            <div class="main-top">
+                <h1>〜検索結果〜</h1>
+            </div>
             <div class="main-middle">
                 <div class="cards">
                     <div class="row">

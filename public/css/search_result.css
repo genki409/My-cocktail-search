@@ -15,7 +15,7 @@ html {
     src: url("../fonts/Senobi-Gothic-Bold.ttf");
 }
 
-/* header */
+/* header
 
 .header {
     width: 100%;
@@ -84,19 +84,50 @@ html {
     background: linear-gradient(#315166, #162735);
 }
 
+/* main-top */
+
+.main-top {
+
+}
+
+.main-top h1 {
+    font-size: 35px;
+    color: white;
+    font-family: "せのびゴシック";
+    padding-top: 50px;
+    margin-left: 50px;
+}
+@media (max-width: 880px){
+    .main-top h1{
+        font-size: 30px;
+}
+}
+@media (max-width: 660px){
+    .main-top h1{
+        font-size: 30px;
+}
+}
+@media (max-width: 400px){
+    .main-top h1{
+        font-size: 25px;
+        margin-left: 30px;
+}
+}
+
 /* main-middle */
 
 .main-middle {
     height: 100%;
     max-width: 1100px;
-    margin: 55px auto;
-}
+    margin: 0 auto;
+    padding: 60px 30px;
+} 
 
 /* --------------------------------
             .cards
 -------------------------------- */
 .cards {
-    margin-top: 30px;
+    margin-top: 23px;
 }
 .row {
     max-width: 1100px;
@@ -122,6 +153,17 @@ html {
 .row a:nth-child(n + 4) {
     margin-top: 75px;
 }
+@media (max-width: 991px){
+    .row a:nth-child(n + 3) {
+        margin-top: 50px;
+}
+}
+@media (max-width: 575px){
+    .row a:nth-child(n + 2) {
+        margin-top: 30px;
+}
+}
+
 .row .card {
     position: relative;
     height: 350px;
@@ -170,10 +212,16 @@ html {
     justify-content: space-around;
     height: auto;
     height: 250px;
+    padding: 0 70px;
+}
+@media (max-width: 660px){
+    .card-date {
+        padding: 0 50px;
+}
 }
 .card-base, .card-taste, .card-alc {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .card-date h5 {
     height: 30px;
@@ -184,7 +232,7 @@ html {
     text-align: center;
 }
 .base-date, .taste-date, .alc-date {
-    font-size: 10px;
+    font-size: 15px;
     color: black;
     padding: 5px;
 }
@@ -193,25 +241,6 @@ html {
     width: 60px;
     margin-left: 50px;
     /* border-radius: 20px; */
-}
-
-/* ページトップボタン */
-
-.main-bottom {
-    height: 100px;
-}
-
-.main-bottom a {
-    display: block;
-    text-align: center;
-    margin-top: 2px;
-    width: 35px;
-    height: 35px;
-    margin: 60px auto 0 auto;
-}
-.fas {
-    font-size: 17px;
-    margin-top: 2px;
 }
 
 /* footer */

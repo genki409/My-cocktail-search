@@ -52,9 +52,6 @@
                             @endforeach
                         </div><!-- /.row -->
                     </div><!-- /.cards -->
-                    <div class="page-top-btn">
-                        <a href="#page-top"><i class="fas fa-angle-up"></i></a>
-                    </div><!-- /.page-top -->
                 </main>
             </div><!-- /.container -->
         </div><!-- /.container-bg -->
