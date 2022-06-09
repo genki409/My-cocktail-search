@@ -16,47 +16,50 @@
 @section('search')
 
     <body>
-        <div class="guid" id="nav">
+        <div class="back-btn" id="nav">
             <a href="javascript:history.back()">戻る</a>
         </div><!-- /.guid -->
-
-        <div class="box">
-            <div class="box2">
-                <div class="container">
-                    <p class="ex">{{ $posts['cocktail_digest'] }}</p>
-                    <h1 class="zin">{{ $posts['cocktail_name'] }}</h1>
+        <main class="main-container">
+            <div class="main">
+                <div class="main-top">
+                    <p class="top-title">{{ $posts['cocktail_digest'] }}</p>
+                    <h1 class="top-name">{{ $posts['cocktail_name'] }}</h1>
                 </div>
 
-                <div class="picture-container">
-                    <img class="picture" src="{{ asset('img/sample_zin_KH.jpeg') }}" alt="">
-
-                    <div class="container3">
-                        <div class="box5">Base</div>
-                        <div class="box6">{{ $posts['base_name'] }}</div>
-                        <div class="box7">taste</div>
-                        <div class="box8">{{ $posts['taste_name'] }}</div>
-                        <div class="box9">Alc.</div>
-                        <div class="box10">{{ $posts['alcohol'] }}%</div>
+                <div class="main-middle">
+                    <img class="main-middle-img" src="{{ asset('img/sample_zin_KH.jpeg') }}" alt="">
+                    <div class="middle-date">
+                        <div class="middle-base">
+                            <h5>Base</h5>
+                            <div class="base">{{ $posts['base_name'] }}</div>
+                        </div>
+                        <div class="middle-taste">
+                            <h5>taste</h5>
+                            <div class="taste">{{ $posts['taste_name'] }}</div>
+                        </div>
+                        <div class="middle-arc">
+                            <h5>Alc.</h5>
+                            <div class="arc">{{ $posts['alcohol'] }}%</div>
+                        </div>
                     </div>
                 </div>
-
-                @foreach ($posts['recipes'] as $recipe)
-                    <div class="container4">
-                        <div class="comp1">{{ $recipe['ingredient_name'] }}</div>
-                        <div class="comp2">{{ $recipe['amount'] }}{{ $recipe['unit'] }}</div>
-                    </div>
+                <div class="main-bottom">
+                    <h6>~このお酒について~</h6>
+                    <p class="cocktail-detail">{{ $posts['cocktail_desc'] }}</p>
                     <hr class="hr">
-                @endforeach
-
-                <p class="ex2">{{ $posts['recipe_desc'] }}</p>
-
-                <hr class="hr3">
-
-                <p class="ex3">{{ $posts['cocktail_desc'] }}</p>
-
+                    <h6>~作り方と材料~</h6>
+                    @foreach ($posts['recipes'] as $recipe)
+                    <div class="ingredient">
+                        <div class="ingredient-name">{{ $recipe['ingredient_name'] }}</div>
+                        <div class="amount">{{ $recipe['amount'] }}{{ $recipe['unit'] }}</div>
+                    </div>
+                    <hr class="hr-2">
+                    @endforeach
+                    <p class="make">{{ $posts['recipe_desc'] }}</p>
+                </div>
             </div>
-        </div>
-        <div class="guid2">
+        </main>
+        <div class="back-btn-bt">
             {{-- <a class="front" href="#">
             << 前へ</a> --}}
             <a href="javascript:history.back()">戻る</a>
