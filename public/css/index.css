@@ -86,10 +86,7 @@
     }
 }
 .main-top::after {
-    /* content: url(../img/record-list_cocktail.png); */
     position: absolute;
-    /* top: 97px;
-    right: 55px; */
 }
 @media (min-width: 1550px) {
     .main-top::after {
