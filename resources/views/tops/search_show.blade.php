@@ -22,12 +22,11 @@
         <main class="main-container">
             <div class="main">
                 <div class="main-top">
-                    <p class="top-title">{{ $posts['cocktail_digest'] }}</p>
+                    <h2 class="top-title">{{ $posts['cocktail_digest'] }}</h2>
                     <h1 class="top-name">{{ $posts['cocktail_name'] }}</h1>
                 </div>
 
                 <div class="main-middle">
-                    <img class="main-middle-img" src="{{ asset('img/sample_zin_KH.jpeg') }}" alt="">
                     <div class="middle-date">
                         <div class="middle-base">
                             <h5>Base</h5>
