@@ -20,7 +20,8 @@ font-size: 16px;
 padding:  30px 20px 25px 28px;
 }
 #wrapper nav ul li a{
-color: #ddd
+color: #ddd;
+text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
