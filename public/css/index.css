@@ -16,6 +16,7 @@
 .container-bg {
     position: relative;
     background: linear-gradient(#355469 0%, #1b2a35 100%);
+    min-height: 640px;
 }
 .container-bg::after {
     content: "";
