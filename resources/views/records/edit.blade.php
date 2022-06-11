@@ -58,7 +58,7 @@
                                       </div>
                                       <div class="featuru">
                                           <label for="featuru-form">特徴</label>
-                                          <textarea name="featuru" cols="30" rows="5">{{ $record->featuru }}</textarea>
+                                          <textarea name="feature" cols="30" rows="5">{{ $record->feature }}</textarea>
                                       </div>
                                   </div>
                               </div>
