@@ -30,12 +30,8 @@
                                   <div class="top-left-container">
                                       <!-- 👇ここにプレビュー画像を追加する -->
                                       <div class="upload-img">
-                                          <div id="preview"></div>
+                                          <img class="preview" src="../../img/{{ $record->image }}" alt="">
                                       </div>
-                                      <label class="upload-label">
-                                          写真を選ぶ
-                                          <input type="file" id="example" name="image" multiple>
-                                      </label>
                                   </div>
                               </div>
                               <div class="top-right">
