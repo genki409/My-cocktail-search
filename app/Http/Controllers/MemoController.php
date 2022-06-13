@@ -23,6 +23,14 @@ class MemoController extends Controller
     public function store(Request $request)
     {
         // dd($request);
+        if ($file = $request->image) {
+            $fileName = time() . $file->getClientOriginalName();
+            $target_path = public_path('img/');
+            $file->move($target_path, $fileName);
+        } else {
+            $fileName = "";
+        }
+
         $records = new Memo;
         $records->name = $request->name;
         $records->base = $request->base;
@@ -30,7 +38,8 @@ class MemoController extends Controller
         $records->feature = $request->feature;
         $records->comment = $request->comment;
         $records->ingredient = $request->ingredient;
-        $records->image = $request->image;
+        // $records->image = $request->image;
+        $records->image = $fileName;
         $records->user_id = Auth::id();
         $records->save();
         return redirect()->route('records.index');

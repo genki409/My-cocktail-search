@@ -42,7 +42,7 @@
                                 <p>{{ $record->created_at }}</p>
                                 <h1>{{ $record->name }}</h1>
                                 <div class="display-image">
-                                    <img src="/img/show-free.png" alt="お酒の写真">
+                                    <img src="../../img/{{ $record->image }}" alt="お酒の写真">
                                 </div>
                             </div>
                         </div>
