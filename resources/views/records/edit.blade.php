@@ -81,13 +81,13 @@
                         <!-- 登録ボタン -->
                         <div class="register-derete">
                             <button type="submit" class="register-btn">登録する</button>
-                            <form action='{{ route('records.destroy', $record->id) }}' method='post'>
-                                @csrf
-                                @method('delete')
-                                  <input type='submit' value='削除' class="derete-btn" onclick='return confirm("本当に削除しますか？");'>
-                            </form>
                         </div>
-                      </form>
+                    </form>
+                    <form action='{{ route('records.destroy', $record->id) }}' method='post'>
+                        @csrf
+                        @method('delete')
+                          <input type='submit' value='削除' class="derete-btn" onclick='return confirm("本当に削除しますか？");'>
+                    </form>
                 </div>
             </div>
             <div class="memory">

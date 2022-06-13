@@ -21,7 +21,7 @@
             </div>
             <div class="input-form-outside">
                 <div class="input-form">
-                    <form action="{{ route('records.store') }}" method="POST">
+                    <form action="{{ route('records.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                             <div class="form-top">
                                 <div class="top-left">
@@ -32,7 +32,7 @@
                                         </div>
                                         <label class="upload-label">
                                             写真を選ぶ
-                                            <input type="file" id="example" name="image" multiple>
+                                            <input type="file" id="example" name="image" id="image" multiple>
                                         </label>
                                     </div>
                                 </div>
