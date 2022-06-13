@@ -18,7 +18,6 @@
         <main class="main">
             <div class="main-top">
                 <h2>編集</h2>
-                <img class="lemon" src="img/lemon" alt="レモン">
             </div>
             <div class="input-form-outside">
                 <div class="input-form">
