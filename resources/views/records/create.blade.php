@@ -21,7 +21,7 @@
             </div>
             <div class="input-form-outside">
                 <div class="input-form">
-                    <form action="{{ route('records.store') }}" method="POST">
+                    <form action="{{ route('records.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                             <div class="form-top">
                                 <div class="top-left">
@@ -56,7 +56,7 @@
                                         </div>
                                         <div class="featuru">
                                             <label for="featuru-form">特徴</label>
-                                            <textarea name="featuru" cols="30" rows="5" placeholder="シンプル、さっぱり（自由入力）"></textarea>
+                                            <textarea name="feature" cols="30" rows="5" placeholder="シンプル、さっぱり（自由入力）"></textarea>
                                         </div>
                                     </div>
                                 </div>

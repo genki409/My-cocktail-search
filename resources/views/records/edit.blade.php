@@ -18,7 +18,6 @@
         <main class="main">
             <div class="main-top">
                 <h2>編集</h2>
-                <img class="lemon" src="img/lemon" alt="レモン">
             </div>
             <div class="input-form-outside">
                 <div class="input-form">
@@ -28,14 +27,9 @@
                           <div class="form-top">
                               <div class="top-left">
                                   <div class="top-left-container">
-                                      <!-- 👇ここにプレビュー画像を追加する -->
                                       <div class="upload-img">
-                                          <div id="preview"></div>
+                                          <img class="preview" src="../../img/{{ $record->image }}" alt="">
                                       </div>
-                                      <label class="upload-label">
-                                          写真を選ぶ
-                                          <input type="file" id="example" name="image" multiple>
-                                      </label>
                                   </div>
                               </div>
                               <div class="top-right">
@@ -58,7 +52,7 @@
                                       </div>
                                       <div class="featuru">
                                           <label for="featuru-form">特徴</label>
-                                          <textarea name="featuru" cols="30" rows="5">{{ $record->featuru }}</textarea>
+                                          <textarea name="feature" cols="30" rows="5">{{ $record->feature }}</textarea>
                                       </div>
                                   </div>
                               </div>
@@ -81,13 +75,13 @@
                         <!-- 登録ボタン -->
                         <div class="register-derete">
                             <button type="submit" class="register-btn">登録する</button>
-                            <form action='{{ route('records.destroy', $record->id) }}' method='post'>
-                                @csrf
-                                @method('delete')
-                                  <input type='submit' value='削除' class="derete-btn" onclick='return confirm("本当に削除しますか？");'>
-                            </form>
                         </div>
-                      </form>
+                    </form>
+                    <form action='{{ route('records.destroy', $record->id) }}' method='post'>
+                        @csrf
+                        @method('delete')
+                          <input type='submit' value='削除' class="derete-btn" onclick='return confirm("本当に削除しますか？");'>
+                    </form>
                 </div>
             </div>
             <div class="memory">

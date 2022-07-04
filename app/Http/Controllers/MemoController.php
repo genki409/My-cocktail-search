@@ -23,16 +23,23 @@ class MemoController extends Controller
     public function store(Request $request)
     {
         // dd($request);
+        if ($file = $request->image) {
+            $fileName = time() . $file->getClientOriginalName();
+            $target_path = public_path('img/');
+            $file->move($target_path, $fileName);
+        } else {
+            $fileName = "";
+        }
+
         $records = new Memo;
         $records->name = $request->name;
         $records->base = $request->base;
         $records->taste = $request->taste;
         $records->feature = $request->feature;
         $records->comment = $request->comment;
-        $records->image = $request->image;
-        $records->image2 = $request->image2;
-        $records->image3 = $request->image3;
-        $records->image4 = $request->image4;
+        $records->ingredient = $request->ingredient;
+        // $records->image = $request->image;
+        $records->image = $fileName;
         $records->user_id = Auth::id();
         $records->save();
         return redirect()->route('records.index');
@@ -41,7 +48,7 @@ class MemoController extends Controller
     function show($id)
     {
         $record = Memo::find($id);
-        return view('records.show', ['record'=>$record]);
+        return view('records.show', ['record' => $record]);
     }
 
 
@@ -53,19 +60,37 @@ class MemoController extends Controller
         return view('records.edit', compact('record'));
     }
 
+    // function update(Request $request, $id)
     function update(Request $request, $id)
     {
+
+        if ($file = $request->image) {
+            $fileName = time() . $file->getClientOriginalName();
+            $target_path = public_path('img/');
+            $file->move($target_path, $fileName);
+        } else {
+            $fileName = "";
+        }
+
         $records = Memo::find($id);
         $records->name = $request->name;
         $records->base = $request->base;
         $records->taste = $request->taste;
         $records->feature = $request->feature;
         $records->comment = $request->comment;
-        $records->image = $request->image;
-        $records->image2 = $request->image2;
-        $records->image3 = $request->image3;
-        $records->image4 = $request->image4;
-        $records -> save();
+        $records->ingredient = $request->ingredient;
+        // $records->image = $fileName;
+        $records->save();
+
+        // $records->fill($request->all());
+        // if ($file = $request->image) {
+        //     $fileName = time() . $file->getClientOriginalName();
+        //     $target_path = public_path('img/');
+        //     $file->move($target_path, $fileName);
+        // } else {
+        //     $records->image;
+        // }
+        // $records->save();
 
         return view('records.show', compact('record'));
     }
@@ -73,7 +98,7 @@ class MemoController extends Controller
     function destroy($id)
     {
         $records = Memo::find($id);
-        if(Auth::id() != $records->user_id) {
+        if (Auth::id() != $records->user_id) {
             return abort(404);
         }
         $records->delete();
