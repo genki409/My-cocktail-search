@@ -27,7 +27,6 @@
                           <div class="form-top">
                               <div class="top-left">
                                   <div class="top-left-container">
-                                      <!-- 👇ここにプレビュー画像を追加する -->
                                       <div class="upload-img">
                                           <img class="preview" src="../../img/{{ $record->image }}" alt="">
                                       </div>
